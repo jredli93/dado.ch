@@ -1,4 +1,53 @@
-body {
-  background: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+
+.header {
+  height: 100vh;
+}
+
+.header .vegas-slide {
+  filter: brightness(45%);
+}
+
+.header .navigation-list {
+  margin: 0 auto;
+  max-width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  height: 20vh;
+  color: #efefef;
+}
+
+.header .navigation-list .navigation-item {
+  font-size: 1.2rem;
+}
+
+.header .navigation-list .navigation-item .navigation-item-logo {
+  width: 200px;
+  filter: invert(100%);
+}
+
+.header .cta {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header .cta .cta-heading {
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+.header .cta .est-wrap {
+  display: flex;
+  align-items: center;
 }
 
