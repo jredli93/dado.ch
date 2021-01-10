@@ -3,8 +3,8 @@ $("#header").vegas({
     animation: 'random',
     timer: false,
     slides: [
-        { src: "/images/slider1.jpg" },
-        { src: "/images/slider2.jpg" },
-        { src: "/images/slider3.jpg" }
+        { src: "/assets/images/slider1.jpg" },
+        { src: "/assets/images/slider2.jpg" },
+        { src: "/assets/images/slider3.jpg" }
     ]
 });

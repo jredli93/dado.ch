@@ -1,0 +1,85 @@
+.showcase-wrap {
+    margin-top: -15rem;
+    background: url('/assets/images/showcase-background.jpg');
+    background-size: cover;
+    padding-bottom: 5rem;
+
+    .showcase {
+        margin: 0 auto;
+        margin-top: 15rem;
+        width: 60vw;
+        text-align: center;
+        line-height: 1.5rem;
+        padding-top: 20rem;
+
+        .showcase-overtitle {
+            color: $green;
+            font-size: 1.2rem;
+        }
+
+        .showcase-title {
+            color: $text-white;
+            font-family: $styled-text;
+            font-size: 5rem;
+            text-shadow: 0px 0px 10px $dark-black;
+        }
+
+        // Grid
+        .showcase-grid {
+            margin-top: 5rem;
+            filter: grayscale(45%);
+
+            .container {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: dense;
+                grid-gap: 0.3rem;
+                grid-template:
+                    "1fr 1fr 1fr 1fr 1fr"33.33vh "1fr 1fr 1fr 1fr 1fr"33.33vh;
+            }
+
+            .container .box {
+                position: relative;
+                background: #ccc;
+            }
+
+            .container .box.a {
+                grid-row: span 2;
+            }
+
+            .container .box.b,
+            .container .box.f,
+            .container .box.h,
+            .container .box.j {
+                grid-column: span 2;
+            }
+
+            .container .box img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @media (max-width: 991px) {
+                .container {
+                    grid-template:
+                        "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    grid-template:
+                        "1fr 1fr"200px "1fr 1fr"200px "1fr 1fr"200px "1fr 1fr"200px "1fr 1fr"200px "1fr 1fr"200px "1fr 1fr"200px;
+                }
+            }
+
+            .container .box.h {
+                grid-column: span 1;
+            }
+        }
+    }
+}

@@ -1,16 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Mukta", sans-serif;
-}
-
 .header {
   height: 100vh;
 }
 
 .header .vegas-slide {
-  filter: brightness(45%);
+  filter: brightness(45%) grayscale(75%);
 }
 
 .header .navigation-list {
@@ -43,11 +36,407 @@
 
 .header .cta .cta-heading {
   font-weight: 300;
-  font-size: 5rem;
+  font-size: 5.3rem;
+  line-height: 1rem;
+  font-family: "IM Fell DW Pica", serif;
+}
+
+.header .cta .cta-subheading {
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 6rem;
 }
 
 .header .cta .est-wrap {
   display: flex;
   align-items: center;
+}
+
+.header .cta .est-wrap .cta-line {
+  width: 1.5rem;
+  border: none;
+  height: 2px;
+  background: #3e7f80;
+}
+
+.header .cta .cta-btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  color: white;
+  background: transparent;
+  border: 0.2rem solid #3e7f80;
+}
+
+.header .scroll {
+  display: flex;
+  justify-content: center;
+}
+
+.header .scroll .box span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  -webkit-animation: animate 2s infinite;
+          animation: animate 2s infinite;
+}
+
+.header .scroll .box span:nth-child(2) {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.header .scroll .box span:nth-child(3) {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 95vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 25vh;
+  width: 75vw;
+  background: #0f0f0f;
+  box-shadow: 0px 0px 23px 0px #0f0f0f;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.banner .banner-single {
+  flex: 0 1 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0px 0px 18px 6px #0f0f0f;
+}
+
+.banner-single:nth-child(1) {
+  background: url("http://hn.arrowpress.net/barber/wp-content/uploads/2017/03/h6_bannerimg3.jpg");
+  background-size: cover;
+}
+
+.banner-single:nth-child(2) {
+  background: url("http://hn.arrowpress.net/barber/wp-content/uploads/2017/03/h6_bannerimg5.jpg");
+  background-size: cover;
+}
+
+.banner-single:nth-child(3) {
+  background: url("http://hn.arrowpress.net/barber/wp-content/uploads/2017/03/h6_bannerimg3.jpg");
+  background-size: cover;
+}
+
+.banner-single:nth-child(4) {
+  background: url("http://hn.arrowpress.net/barber/wp-content/uploads/2017/03/h6_bannerimg5.jpg");
+  background-size: cover;
+}
+
+.showcase-wrap {
+  margin-top: -15rem;
+  background: url("/assets/images/showcase-background.jpg");
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+
+.showcase-wrap .showcase {
+  margin: 0 auto;
+  margin-top: 15rem;
+  width: 60vw;
+  text-align: center;
+  line-height: 1.5rem;
+  padding-top: 20rem;
+}
+
+.showcase-wrap .showcase .showcase-overtitle {
+  color: #3e7f80;
+  font-size: 1.2rem;
+}
+
+.showcase-wrap .showcase .showcase-title {
+  color: #efefef;
+  font-family: "IM Fell DW Pica", serif;
+  font-size: 5rem;
+  text-shadow: 0px 0px 10px #0f0f0f;
+}
+
+.showcase-wrap .showcase .showcase-grid {
+  margin-top: 5rem;
+  filter: grayscale(45%);
+}
+
+.showcase-wrap .showcase .showcase-grid .container {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-gap: 0.3rem;
+  grid-template: "1fr 1fr 1fr 1fr 1fr" 33.33vh "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+}
+
+.showcase-wrap .showcase .showcase-grid .container .box {
+  position: relative;
+  background: #ccc;
+}
+
+.showcase-wrap .showcase .showcase-grid .container .box.a {
+  grid-row: span 2;
+}
+
+.showcase-wrap .showcase .showcase-grid .container .box.b,
+.showcase-wrap .showcase .showcase-grid .container .box.f,
+.showcase-wrap .showcase .showcase-grid .container .box.h,
+.showcase-wrap .showcase .showcase-grid .container .box.j {
+  grid-column: span 2;
+}
+
+.showcase-wrap .showcase .showcase-grid .container .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .showcase-wrap .showcase .showcase-grid .container {
+    grid-template: "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px "1fr 1fr 1fr" 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-wrap .showcase .showcase-grid .container {
+    grid-template: "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px "1fr 1fr" 200px;
+  }
+}
+
+.showcase-wrap .showcase .showcase-grid .container .box.h {
+  grid-column: span 1;
+}
+
+.cta-wrap {
+  height: 57vh;
+}
+
+.cta-wrap .cta-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cta-wrap .cta-content .cta-left {
+  flex: 0 1 50%;
+  background: url("/assets/images/body-background.jpg");
+  height: 100%;
+  padding: 4rem 4rem 4rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.cta-wrap .cta-content .cta-left .cta-border {
+  position: absolute;
+  top: 16%;
+  width: 33rem;
+  left: 6rem;
+  filter: invert(1) opacity(0.1);
+}
+
+.cta-wrap .cta-content .cta-left .cta-text {
+  padding: 1rem 0;
+}
+
+.cta-wrap .cta-content .cta-left .cta-left-btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.3rem;
+  color: white;
+  background: transparent;
+  border: 0.2rem solid #3e7f80;
+  width: 14rem;
+}
+
+.cta-wrap .cta-content .cta-left .cta-title {
+  font-size: 4rem;
+  font-family: "IM Fell DW Pica", serif;
+  padding: 1rem 0;
+}
+
+.cta-wrap .cta-content .cta-right {
+  flex: 0 1 50%;
+  height: 100%;
+  background: url("/assets/images/banner.jpg");
+  background-size: contain;
+  filter: grayscale(0.6);
+  position: relative;
+}
+
+.cta-wrap .cta-content .cta-right .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  opacity: 0.7;
+  font-size: 4rem;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 0 2px black);
+}
+
+.artists-wrap {
+  background-image: linear-gradient(to bottom, #0c0c0c, rgba(86, 86, 86, 0)), url(/assets/images/slider1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.artists-wrap .artists-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.artists-wrap .artists-content .artists-overtitle {
+  color: #3e7f80;
+  font-size: 1.2rem;
+  display: block;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.artists-wrap .artists-content .artists-title {
+  color: #efefef;
+  font-family: "IM Fell DW Pica", serif;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow: 0px 0px 10px #0f0f0f;
+}
+
+.artists-wrap .artists-background {
+  height: 600px;
+}
+
+.artists-wrap .artists-background .artists-list {
+  max-width: 60vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel {
+  height: 350px;
+  /* position dots up a bit */
+  /* dots are lines */
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .flicity-viewport {
+  height: 100%;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell {
+  background: red;
+  width: 33%;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .artist-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai1 {
+  background: url("http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s13-owjxjw2uh7q52vcn3cvlt225b29bad76ox6rw2bzw0.jpg") top/cover;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai2 {
+  background: url("http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s12-owjxjrdnj1jpgtjgusugyl8uc4wh7voj09xchoiyr4.jpg") top/cover;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai3 {
+  background: url("http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s4-owjxik52snwimra9va5mrw5n0etldswvibx0eyb2pc.jpg") center/cover;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai4 {
+  background: url("http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s11-owjxjmogkvd9urqam8tc44fjd7jn5e5vbmnx3apxm8.jpg") center/cover;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .artist-info {
+  display: none;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .artist-name {
+  text-align: center;
+  font-family: "IM Fell DW Pica", serif;
+  text-shadow: 0px 0px 5px black;
+  color: #3e7f80;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .flickity-page-dots {
+  bottom: -22px;
+}
+
+.artists-wrap .artists-background .artists-list .main-carousel .flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  color: #efefef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f0f0f;
 }
 

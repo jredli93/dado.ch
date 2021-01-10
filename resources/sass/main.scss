@@ -1,14 +1,26 @@
-// Global
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mukta', sans-serif;
-}
-
 // Variables
 @import './helpers/variables.scss';
 @import './helpers/mixins.scss';
 
 // Pages
-@import './pages/home.scss';
+@import './pages/homepage/home.scss';
+@import './pages/homepage/showcase.scss';
+@import './pages/homepage/cta.scss';
+@import './pages/homepage/artists.scss';
+
+// Global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $regular-text;
+    color: $text-white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $dark-black;
+}

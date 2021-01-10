@@ -1,0 +1,101 @@
+.artists-wrap {
+    background-image: linear-gradient(to bottom, rgb(12 12 12), rgb(86 86 86 / 0%)), url(/assets/images/slider1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .artists-content {
+        max-width: 100%;
+        margin: 0 auto;
+
+        .artists-overtitle {
+            color: $green;
+            font-size: 1.2rem;
+            display: block;
+            padding-top: 5rem;
+            text-align: center;
+        }
+
+        .artists-title {
+            color: $text-white;
+            font-family: $styled-text;
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 5rem;
+            text-shadow: 0px 0px 10px $dark-black;
+        }
+    }
+
+    .artists-background {
+        height: 600px;
+
+        .artists-list {
+            max-width: 60vw;
+            margin: 0 auto;
+            margin-top: 5rem;
+
+            .main-carousel {
+                height: 350px;
+
+                .flicity-viewport {
+                    height: 100%;
+                }
+
+                .carousel-cell {
+                    background: red;
+                    width: 33%;
+                    height: 200px;
+                    margin-right: 10px;
+
+                    .artist-image {
+                        width: 100%;
+                        height: 300px;
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .ai1 {
+                        background: url('http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s13-owjxjw2uh7q52vcn3cvlt225b29bad76ox6rw2bzw0.jpg') top/cover;
+                    }
+
+                    .ai2 {
+                        background: url('http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s12-owjxjrdnj1jpgtjgusugyl8uc4wh7voj09xchoiyr4.jpg') top/cover;
+                    }
+
+                    .ai3 {
+                        background: url('http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s4-owjxik52snwimra9va5mrw5n0etldswvibx0eyb2pc.jpg') center/cover;
+                    }
+
+                    .ai4 {
+                        background: url('http://templatekit.krakenbox.net/blankink/wp-content/uploads/sites/4/elementor/thumbs/s11-owjxjmogkvd9urqam8tc44fjd7jn5e5vbmnx3apxm8.jpg') center/cover;
+                    }
+
+                    .artist-info {
+                        display: none;
+                    }
+
+                    .artist-name {
+                        text-align: center;
+                        font-family: $styled-text;
+                        text-shadow: 0px 0px 5px black;
+                        color: $green;
+                    }
+                }
+
+                /* position dots up a bit */
+                .flickity-page-dots {
+                    bottom: -22px;
+                }
+
+                /* dots are lines */
+                .flickity-page-dots .dot {
+                    height: 4px;
+                    width: 40px;
+                    margin: 0;
+                    border-radius: 0;
+                }
+            }
+
+
+        }
+    }
+}
