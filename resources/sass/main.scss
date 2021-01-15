@@ -7,6 +7,9 @@
 @import './pages/homepage/showcase.scss';
 @import './pages/homepage/cta.scss';
 @import './pages/homepage/artists.scss';
+@import './pages/homepage/service.scss';
+@import './pages/homepage/contact.scss';
+@import './pages/homepage/footer.scss';
 
 // Global
 * {
@@ -23,4 +26,36 @@ html {
 
 body {
     background: $dark-black;
+}
+
+#map {
+    width: 100%;
+    height: 65vh;
+}
+
+.mapboxgl-ctrl-bottom-right,
+.mapboxgl-ctrl-bottom-left {
+    display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $dark-black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $green;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #305c5c;
 }

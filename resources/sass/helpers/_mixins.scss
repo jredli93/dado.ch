@@ -2,3 +2,9 @@
     margin: 0 auto;
     max-width: 70vw;
 }
+
+@mixin input() {
+    padding: 0.5rem 1.5rem;
+    outline: none;
+    border: none;
+}

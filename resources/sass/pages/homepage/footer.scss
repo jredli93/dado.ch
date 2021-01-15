@@ -1,0 +1,21 @@
+.footer-wrap {
+    margin-top: 9rem;
+
+    .footer {
+        border-top: 1px solid $text-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+
+        .footer-logo {
+            filter: invert(1);
+            text-align: center;
+            width: 150px;
+            display: block;
+        }
+    }
+}

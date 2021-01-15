@@ -105,6 +105,7 @@ $("#header").vegas({
     src: "/assets/images/slider3.jpg"
   }]
 });
+AOS.init();
 
 /***/ }),
 

@@ -15,3 +15,15 @@
 @section('artists')
     @include('pages.homepage.artists')
 @endsection
+
+@section('service')
+    @include('pages.homepage.service')
+@endsection
+
+@section('contact')
+    @include('pages.homepage.contact')
+@endsection
+
+@section('footer')
+    @include('pages.homepage.footer')
+@endsection

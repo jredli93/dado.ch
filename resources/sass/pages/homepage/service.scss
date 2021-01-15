@@ -1,0 +1,43 @@
+.service-wrap {
+    width: 100%;
+    height: 72vh;
+
+    .service {
+        display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // flex-wrap: wrap;
+        height: 100%;
+
+        .service-left {
+            background: url('/assets/images/piercing.jpg');
+            height: 100%;
+            width: 50%;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            background-size: cover;
+            filter: saturate(0.1);
+
+            &:hover {
+                width: 75%;
+                filter: saturate(0.9);
+            }
+        }
+
+        .service-right {
+            background: url('/assets/images/removal.jpg');
+            height: 100%;
+            width: 50%;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            background-size: cover;
+            filter: saturate(0.1);
+
+
+            &:hover {
+                width: 75%;
+                filter: saturate(0.9);
+            }
+        }
+    }
+}
