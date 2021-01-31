@@ -1,0 +1,118 @@
+.piercing-content-wrap {
+
+    .piercing-content {
+        max-width: 70vw;
+        margin: 0 auto;
+
+        .piercing-overtitle {
+            color: $green;
+            font-size: 1.2rem;
+            display: block;
+            padding-top: 3rem;
+            text-align: center;
+        }
+
+        .piercing-title {
+            color: $text-white;
+            font-family: $styled-text;
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 5rem;
+            text-shadow: 0px 0px 10px $dark-black;
+        }
+
+        .piercing-title-advice {
+            color: $text-white;
+            font-family: $styled-text;
+            line-height: 3.5rem;
+            text-align: center;
+            font-size: 5rem;
+            margin-top: 9rem;
+            text-shadow: 0px 0px 10px $dark-black;
+        }
+
+        .piercing-text {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .process-wrap {
+            margin-top: 3rem;
+
+            .process-overtitle {
+                color: $green;
+                font-size: 1rem;
+                display: block;
+                padding-top: 3rem;
+                text-align: center;
+            }
+
+            .process-title {
+                color: $text-white;
+                font-family: $styled-text;
+                line-height: 3.2rem;
+                text-align: center;
+                font-size: 4rem;
+                text-shadow: 0px 0px 10px $dark-black;
+            }
+
+            .process-container {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .process-single {
+                    flex: 0 1 calc(33% - 1rem);
+                    background: #27272778;
+                    padding: 2rem;
+                    position: relative;
+                    border-radius: 2px;
+                    text-align: center;
+                    margin-top: 1rem;
+
+                    .process-single-icon {
+                        width: 100px;
+                        filter: drop-shadow(0px 0px 3px $dark-black) saturate(0.9);
+                    }
+                }
+            }
+        }
+
+        .documents {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+
+            .single-document {
+                display: flex;
+                align-items: center;
+                padding: 0.9rem 1.1rem;
+                justify-content: space-between;
+                width: 360px;
+                border: 1px solid white;
+                border-radius: 4px;
+                background: transparent;
+            }
+        }
+
+        .legal-age {
+            margin-top: 4rem;
+        }
+
+        .legal-age-button {
+            display: flex;
+            align-items: center;
+            padding: 0.9rem 1.1rem;
+            justify-content: space-between;
+            width: 290px;
+            margin: 0 auto;
+            margin-top: 2.5rem;
+            border: 1px solid white;
+            border-radius: 4px;
+            background: transparent;
+        }
+    }
+}

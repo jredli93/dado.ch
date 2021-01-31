@@ -1,0 +1,139 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:26
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-anchor:before { content: "\f100"; }
+.flaticon-anchor-1:before { content: "\f101"; }
+.flaticon-anchor-2:before { content: "\f102"; }
+.flaticon-bell:before { content: "\f103"; }
+.flaticon-bird:before { content: "\f104"; }
+.flaticon-bottle:before { content: "\f105"; }
+.flaticon-brass-knuckles:before { content: "\f106"; }
+.flaticon-cards:before { content: "\f107"; }
+.flaticon-cherries:before { content: "\f108"; }
+.flaticon-compass:before { content: "\f109"; }
+.flaticon-dagger:before { content: "\f10a"; }
+.flaticon-dagger-1:before { content: "\f10b"; }
+.flaticon-dagger-2:before { content: "\f10c"; }
+.flaticon-dagger-3:before { content: "\f10d"; }
+.flaticon-diamond:before { content: "\f10e"; }
+.flaticon-diamond-1:before { content: "\f10f"; }
+.flaticon-dinamite:before { content: "\f110"; }
+.flaticon-eagle:before { content: "\f111"; }
+.flaticon-envelope:before { content: "\f112"; }
+.flaticon-flower:before { content: "\f113"; }
+.flaticon-flower-1:before { content: "\f114"; }
+.flaticon-flower-2:before { content: "\f115"; }
+.flaticon-flowers:before { content: "\f116"; }
+.flaticon-girlfriend:before { content: "\f117"; }
+.flaticon-gun:before { content: "\f118"; }
+.flaticon-gun-1:before { content: "\f119"; }
+.flaticon-heart:before { content: "\f11a"; }
+.flaticon-horseshoe:before { content: "\f11b"; }
+.flaticon-indian-women:before { content: "\f11c"; }
+.flaticon-key:before { content: "\f11d"; }
+.flaticon-lifesaving:before { content: "\f11e"; }
+.flaticon-lighthouse:before { content: "\f11f"; }
+.flaticon-lighthouse-1:before { content: "\f120"; }
+.flaticon-puma:before { content: "\f121"; }
+.flaticon-puma-1:before { content: "\f122"; }
+.flaticon-razor:before { content: "\f123"; }
+.flaticon-revolvers:before { content: "\f124"; }
+.flaticon-rose:before { content: "\f125"; }
+.flaticon-rose-1:before { content: "\f126"; }
+.flaticon-sailor-skull:before { content: "\f127"; }
+.flaticon-shark:before { content: "\f128"; }
+.flaticon-ship:before { content: "\f129"; }
+.flaticon-skull:before { content: "\f12a"; }
+.flaticon-skull-and-bones:before { content: "\f12b"; }
+.flaticon-skull-and-dagger:before { content: "\f12c"; }
+.flaticon-skull-and-snake:before { content: "\f12d"; }
+.flaticon-star:before { content: "\f12e"; }
+.flaticon-sticks:before { content: "\f12f"; }
+.flaticon-tattoo-machine:before { content: "\f130"; }
+.flaticon-wolf:before { content: "\f131"; }
+    
+    $font-Flaticon-anchor: "\f100";
+    $font-Flaticon-anchor-1: "\f101";
+    $font-Flaticon-anchor-2: "\f102";
+    $font-Flaticon-bell: "\f103";
+    $font-Flaticon-bird: "\f104";
+    $font-Flaticon-bottle: "\f105";
+    $font-Flaticon-brass-knuckles: "\f106";
+    $font-Flaticon-cards: "\f107";
+    $font-Flaticon-cherries: "\f108";
+    $font-Flaticon-compass: "\f109";
+    $font-Flaticon-dagger: "\f10a";
+    $font-Flaticon-dagger-1: "\f10b";
+    $font-Flaticon-dagger-2: "\f10c";
+    $font-Flaticon-dagger-3: "\f10d";
+    $font-Flaticon-diamond: "\f10e";
+    $font-Flaticon-diamond-1: "\f10f";
+    $font-Flaticon-dinamite: "\f110";
+    $font-Flaticon-eagle: "\f111";
+    $font-Flaticon-envelope: "\f112";
+    $font-Flaticon-flower: "\f113";
+    $font-Flaticon-flower-1: "\f114";
+    $font-Flaticon-flower-2: "\f115";
+    $font-Flaticon-flowers: "\f116";
+    $font-Flaticon-girlfriend: "\f117";
+    $font-Flaticon-gun: "\f118";
+    $font-Flaticon-gun-1: "\f119";
+    $font-Flaticon-heart: "\f11a";
+    $font-Flaticon-horseshoe: "\f11b";
+    $font-Flaticon-indian-women: "\f11c";
+    $font-Flaticon-key: "\f11d";
+    $font-Flaticon-lifesaving: "\f11e";
+    $font-Flaticon-lighthouse: "\f11f";
+    $font-Flaticon-lighthouse-1: "\f120";
+    $font-Flaticon-puma: "\f121";
+    $font-Flaticon-puma-1: "\f122";
+    $font-Flaticon-razor: "\f123";
+    $font-Flaticon-revolvers: "\f124";
+    $font-Flaticon-rose: "\f125";
+    $font-Flaticon-rose-1: "\f126";
+    $font-Flaticon-sailor-skull: "\f127";
+    $font-Flaticon-shark: "\f128";
+    $font-Flaticon-ship: "\f129";
+    $font-Flaticon-skull: "\f12a";
+    $font-Flaticon-skull-and-bones: "\f12b";
+    $font-Flaticon-skull-and-dagger: "\f12c";
+    $font-Flaticon-skull-and-snake: "\f12d";
+    $font-Flaticon-star: "\f12e";
+    $font-Flaticon-sticks: "\f12f";
+    $font-Flaticon-tattoo-machine: "\f130";
+    $font-Flaticon-wolf: "\f131";

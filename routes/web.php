@@ -17,3 +17,8 @@ use App\Http\Controllers\PageController;
 Auth::routes();
 
 Route::get('/', 'PageController@index')->name('home');
+Route::get('/faq', 'PageController@faq')->name('faq');
+Route::get('/tattoo', 'PageController@tattoo')->name('tattoo');
+Route::get('/removal', 'PageController@removal')->name('removal');
+Route::get('/studio', 'PageController@studio')->name('studio');
+Route::get('/piercing', 'PageController@piercing')->name('piercing');
