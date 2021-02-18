@@ -8,25 +8,7 @@
     flex-direction: column;
     align-items: center;
 
-    .navigation-list {
-        @include text-shadow();
-        width: 70vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-        height: 20vh;
-        color: $text-white;
-
-        .navigation-item {
-            font-size: 1.2rem;
-
-            .navigation-item-logo {
-                width: 200px;
-                filter: invert(100%);
-            }
-        }
-    }
+    @include nav;
 
     .removal-title {
         margin-top: 5rem;

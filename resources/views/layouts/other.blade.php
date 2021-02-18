@@ -28,12 +28,27 @@
     @yield('content')
     @yield('footer')
     
+    <div class="overlay overlay-slidedown">
+        <i class="fas fa-times close-button"></i>
+        <nav>
+            <ul>
+                <li><a href="{{ URL::route('home') }}">Home</a></li>
+                <li><a href="{{ URL::route('tattoo') }}">Tattoo</a></li>
+                <li><a href="{{ URL::route('piercing') }}">Piercing</a></li>
+                <li><a href="{{ URL::route('studio') }}">Studio</a></li>
+                <li><a href="{{ URL::route('removal') }}">Removal</a></li>
+                <li><a href="{{ URL::route('faq') }}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!-- Scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/5abe40685b.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/aos.js') }}" defer></script>
     <script src="{{ asset('js/main.js') }}" defer></script>
+    <script src="{{ asset('js/mobile-menu.js') }}" defer></script>
     <script src="{{ asset('js/accordion.js') }}" defer></script>
 </body>
 </html>

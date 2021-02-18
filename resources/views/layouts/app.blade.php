@@ -36,6 +36,20 @@
     @yield('service')
     @yield('contact')
     @yield('footer')
+
+    <div class="overlay overlay-slidedown">
+        <i class="fas fa-times close-button"></i>
+        <nav>
+            <ul>
+                <li><a href="{{ URL::route('home') }}">Home</a></li>
+                <li><a href="{{ URL::route('tattoo') }}">Tattoo</a></li>
+                <li><a href="{{ URL::route('piercing') }}">Piercing</a></li>
+                <li><a href="{{ URL::route('studio') }}">Studio</a></li>
+                <li><a href="{{ URL::route('removal') }}">Removal</a></li>
+                <li><a href="{{ URL::route('faq') }}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <!-- Scripts -->
     {{-- <script src="http://code.jquery.com/jquery.min.js"></script> --}}
@@ -48,6 +62,6 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://kit.fontawesome.com/5abe40685b.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/map.js') }}" defer></script>
-
+    <script src="{{ asset('js/mobile-menu.js') }}" defer></script>
 </body>
 </html>

@@ -5,24 +5,7 @@
         filter: brightness(45%) grayscale(75%);
     }
 
-    .navigation-list {
-        @include center-content();
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style-type: none;
-        height: 20vh;
-        color: $text-white;
-
-        .navigation-item {
-            font-size: 1.2rem;
-
-            .navigation-item-logo {
-                width: 200px;
-                filter: invert(100%);
-            }
-        }
-    }
+    @include nav;
 
     .cta {
         height: 60vh;
@@ -30,6 +13,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        @include mobile {
+            height: 90vh;
+        }
 
         .cta-heading {
             font-weight: 300;

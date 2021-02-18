@@ -11,6 +11,11 @@
         margin: 0 auto;
         padding: 1.5rem 0;
 
+        @include mobile {
+            max-width: 45vh;
+            flex-direction: column;
+        }
+
         .footer-logo {
             filter: invert(1);
             text-align: center;

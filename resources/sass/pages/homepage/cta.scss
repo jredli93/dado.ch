@@ -1,11 +1,15 @@
 .cta-wrap {
-    height: 57vh;
+    height: 75vh;
 
     .cta-content {
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+
+        @include mobile {
+            flex-direction: column;
+        }
 
         .cta-left {
             flex: 0 1 50%;
@@ -16,6 +20,10 @@
             flex-direction: column;
             justify-content: flex-start;
             position: relative;
+
+            @include laptop {
+                padding: 4rem;
+            }
 
 
             .cta-border {
@@ -50,9 +58,13 @@
             flex: 0 1 50%;
             height: 100%;
             background: url('/assets/images/banner.jpg');
-            background-size: contain;
+            background-size: cover;
             filter: grayscale(0.6);
             position: relative;
+
+            @include mobile {
+                width: 100%;
+            }
 
             .play-btn {
                 position: absolute;

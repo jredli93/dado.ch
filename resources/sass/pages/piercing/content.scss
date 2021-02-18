@@ -71,6 +71,10 @@
                     text-align: center;
                     margin-top: 1rem;
 
+                    @include tablet {
+                        flex: 0 1 calc(50% - 1rem);
+                    }
+
                     .process-single-icon {
                         width: 100px;
                         filter: drop-shadow(0px 0px 3px $dark-black) saturate(0.9);
@@ -95,6 +99,10 @@
                 border: 1px solid white;
                 border-radius: 4px;
                 background: transparent;
+
+                @include laptop {
+                    margin-top: 0.5rem;
+                }
             }
         }
 
