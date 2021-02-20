@@ -1,6 +1,8 @@
 <?php
 
+use App\ServiceType;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +13,56 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        $this->call(ServiceTypeSeeder::class);
+        $this->call(ReservationSeeder::class);
+
+        $days = ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'];
+        $serviceTypes = ServiceType::all();
+
+        foreach ($days as $day){
+            foreach ($serviceTypes as $serviceType){
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '12:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '13:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '14:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '15:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '16:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '17:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '18:00:00'
+                ]);
+            }
+        }
     }
 }
