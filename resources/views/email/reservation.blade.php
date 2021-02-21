@@ -10,5 +10,5 @@
     Comment: {{$data['comment']}}
 
     Hvala na ukazanom poverenju,
-    Tattoo
+    DadoTattoo
 @endcomponent
