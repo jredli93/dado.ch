@@ -16,4 +16,9 @@ class Reservation extends Model
         'time',
         'status'
     ];
+
+    public function serviceType()
+    {
+        return $this->belongsTo('App\ServiceType');
+    }
 }

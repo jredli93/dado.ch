@@ -65,7 +65,7 @@ class ReservationController extends Controller
         //Create reservation
         $reservation = Reservation::create($request->all());
         //Fire event for sending mail
-        event(new NewReservationEvent($request->all()));
+        event(new NewReservationEvent($reservation));
 
         return $reservation;
     }
