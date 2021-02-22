@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Acaronlex\LaravelCalendar\Calendar;
 use App\Events\NewReservationEvent;
 use App\Http\Requests\Reservation\CreateReservationRequest;
 use App\Http\Requests\Reservation\GetFreeReservationRequest;
@@ -10,6 +11,47 @@ use App\Reservation;
 
 class ReservationController extends Controller
 {
+    public function index($id)
+    {
+        $events = [];
+
+        $events[] = Calendar::event(
+            'Event One', //event title
+            false, //full day event?
+            '2015-02-11T0800', //start time (you can also use Carbon instead of DateTime)
+            '2015-02-12T0800', //end time (you can also use Carbon instead of DateTime)
+            0 //optionally, you can specify an event ID
+        );
+
+        $events[] = Calendar::event(
+            "Valentine's Day", //event title
+            true, //full day event?
+            new \DateTime('2015-02-14'), //start time (you can also use Carbon instead of DateTime)
+            new \DateTime('2015-02-14'), //end time (you can also use Carbon instead of DateTime)
+            'stringEventId' //optionally, you can specify an event ID
+        );
+
+        $calendar = new Calendar();
+        $calendar->addEvents($events)
+            ->setOptions([
+                'locale' => 'srb',
+                'firstDay' => 0,
+                'displayEventTime' => false,
+                'selectable' => true,
+                'initialView' => 'dayGridMonth',
+                'headerToolbar' => [
+                    'end' => 'today prev,next'
+                ]
+            ]);
+        $calendar->setId('1');
+        $calendar->setCallbacks([
+            'select' => 'function(selectionInfo){}',
+            'eventClick' => 'function(event){}'
+        ]);
+
+        return view('pages.reservation.index', compact('calendar', 'id'));
+    }
+
     public function getFreePeriods(GetFreeReservationRequest $request)
     {
         //Getting day name
@@ -62,6 +104,10 @@ class ReservationController extends Controller
 
     public function createReservation(CreateReservationRequest $request)
     {
+        //Check if reservation exists
+        if (Reservation::where('date', $request->date)->where('time', $request->time)->first()){
+            throw new \Exception('Reservation is taken!');
+        }
         //Create reservation
         $reservation = Reservation::create($request->all());
         //Fire event for sending mail

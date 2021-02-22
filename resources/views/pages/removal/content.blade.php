@@ -1,6 +1,8 @@
 <section class="removal-content-wrap">
     <div class="removal-content">
 
+        <a style="margin-left: 350px; margin-top: 200px" class="removal-title" href="/reservations/1">Reserve termin</a>
+
         <span class="removal-overtitle">Think before you</span>
         <h1 class="removal-title">INK</h1>
 
@@ -131,8 +133,8 @@
         </section>
 
         <h1 class="removal-title-advice">WIR GARANTIEREN</h1>
-        
+
         <p class="removal-text">bei der Beratung wird durch unser Fachpersonal die Anzahl der benötigten Sitzungen festgelegt. Jede weitere Sitzung ist
-        für dich KOSTENLOS</p>    
-    </div>    
+        für dich KOSTENLOS</p>
+    </div>
 </section>
