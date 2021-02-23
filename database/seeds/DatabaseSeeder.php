@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->call(ServiceGroupSeeder::class);
         $this->call(ServiceTypeSeeder::class);
         $this->call(ReservationSeeder::class);
 

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class ServiceTypeSeeder extends Seeder
+class ServiceGroupSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class ServiceTypeSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\ServiceType::class, 15)->create();
+        factory(\App\ServiceGroup::class, 3)->create();
     }
 }

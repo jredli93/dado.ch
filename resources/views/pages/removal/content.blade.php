@@ -1,7 +1,15 @@
 <section class="removal-content-wrap">
     <div class="removal-content">
 
-        <a style="margin-left: 350px; margin-top: 200px" class="removal-title" href="/reservations/1">Reserve termin</a>
+        @if($services)
+            @foreach($services as $service)
+                <a style="margin-left: 400px; margin-top: 200px; text-decoration:none;" href="/reservations/{{$service->id}}">Reserve termin for {{$service->service_name}} | Price {{$service->price}}CHF | Duration {{$service->duration}} MIN</a> <br>
+                <br>
+            @endforeach
+
+        @else
+            NO SERVICES
+        @endif
 
         <span class="removal-overtitle">Think before you</span>
         <h1 class="removal-title">INK</h1>

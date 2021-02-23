@@ -4,6 +4,7 @@
         {!! $calendar->calendar() !!}
         {!! $calendar->script() !!}
         <input id="id" type="hidden" value="{{$id}}">
+        <meta name="csrf-token" id="csrf-token" content="{{ csrf_token() }}">
     </div>
 
     <script>
@@ -16,7 +17,7 @@
             $.ajax({
                 type: "POST",
                 url: '/reservations/free/dates',
-                data: { date, service_type_id /*"_token": $('#csrf-token')[0].content */},
+                data: { date, service_type_id, "_token": $('#csrf-token')[0].content },
                 success: function (response) {
                     console.log(response)
                 },
