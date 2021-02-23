@@ -70,7 +70,46 @@
             </div>
         </div>
 
-        <section class="removal-pricing">
+
+
+                <section class="removal-pricing">
+                    <div class="bg-effect"></div>
+                    <div class="tbl-header">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            @if($services)
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Duration</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                            @foreach($services as $service)
+                                <tr>
+                                    <td>{{$service->service_name}}</td>
+                                    <td>{{$service->price}} CHF</td>
+                                    <td>{{$service->duration}} MIN</td>
+                                    <td><a href="/reservations/{{$service->id}}">Reserve termin</a></td>
+                                </tr>
+                            @endforeach
+
+                            @else
+                                NO SERVICES
+                            </tbody>
+                            @endif
+                        </table>
+                    </div>
+                </section>
+
+
+
+<!--        <section class="removal-pricing">
             <div class="bg-effect"></div>
             <div class="tbl-header">
                 <table cellpadding="0" cellspacing="0" border="0">
@@ -138,7 +177,7 @@
                     </tbody>
                 </table>
             </div>
-        </section>
+        </section>-->
 
         <h1 class="removal-title-advice">WIR GARANTIEREN</h1>
 
