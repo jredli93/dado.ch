@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Reservation;
+use App\ServiceGroup;
+use App\ServiceType;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -15,11 +18,21 @@ class PageController extends Controller
     }
 
     public function tattoo() {
-        return view('pages.tattoo.index');
+
+        $services = ServiceType::whereHas('serviceGroup', function($q){
+            $q->where('name', 'tattoo');
+        })->get();
+
+        return view('pages.tattoo.index', compact('services'));
     }
 
     public function removal() {
-        return view('pages.removal.index');
+
+        $services = ServiceType::whereHas('serviceGroup', function($q){
+            $q->where('name', 'removal');
+        })->get();
+
+        return view('pages.removal.index', compact('services'));
     }
 
     public function studio() {
@@ -27,6 +40,11 @@ class PageController extends Controller
     }
 
     public function piercing() {
-        return view('pages.piercing.index');
+
+        $services = ServiceType::whereHas('serviceGroup', function($q){
+            $q->where('name', 'piercing');
+        })->get();
+
+        return view('pages.piercing.index', compact('services'));
     }
 }

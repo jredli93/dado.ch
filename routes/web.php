@@ -16,6 +16,12 @@ use App\Http\Controllers\PageController;
 
 Auth::routes();
 
+Route::prefix('reservations')->group(function (){
+    Route::get('/{id}', 'ReservationController@index')->name('reservation.index');
+    Route::post('/free/dates', 'ReservationController@getFreePeriods')->name('reservation.free.dates');
+    Route::post('/create', 'ReservationController@createReservation')->name('create.reservation');
+});
+
 Route::get('/', 'PageController@index')->name('home');
 Route::get('/faq', 'PageController@faq')->name('faq');
 Route::get('/tattoo', 'PageController@tattoo')->name('tattoo');

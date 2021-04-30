@@ -1,6 +1,16 @@
 <section class="tattoo-content-wrap">
     <div class="tattoo-content">
 
+        @if($services)
+            @foreach($services as $service)
+                <a style="margin-left: 400px; margin-top: 200px; text-decoration:none;" href="/reservations/{{$service->id}}">Reserve termin for {{$service->service_name}} | Price {{$service->price}}CHF | Duration {{$service->duration}} MIN</a> <br>
+                <br>
+            @endforeach
+
+        @else
+            NO SERVICES
+        @endif
+
         <span class="tattoo-overtitle">Our process of</span>
         <h1 class="tattoo-title">Tattoing</h1>
 
@@ -8,7 +18,7 @@
         das bestmögliche Erlebnis zu bieten. Damit du weisst wie wir arbeiten, haben wir für dich den Ablauf aufs Papier
         gebracht. Natürlich kannst du dich aber auch jederzeit telefonisch oder per E-mail bei uns melden, wenn du offene Fragen
         hast. Ein neues Tattoo sollte gut überlegt sein, wir helfen dir dabei!
-        
+
         Gemeinsam schaffen wir ein einzigartiges Kunstwerk, dass unter die Haut geht.</p>
 
         <div class="process-wrap">
@@ -22,7 +32,7 @@
                     kennenlernen kannst.</p>
                 </div>
                 <div class="process-single">
-                    <img class="process-single-icon" src="/images/icons-tattoo/029-tattoo.png" alt="">               
+                    <img class="process-single-icon" src="/images/icons-tattoo/029-tattoo.png" alt="">
                     <h2 class="process-single-title">Idee & planung</h2>
                     <p class="process-singletext">In einem persönlichen Gespräch kannst du uns deine Ideen und Wünsche mitteilen. Wir prüfen und planen gemeinsam mit dir
                     das Projekt und beachten dabei wichtige Aspekte wie die richtige Platzierung, der Einfluss der Körperströmungen, der
@@ -62,14 +72,14 @@
         </div>
 
         <h1 class="tattoo-title-advice">Pflegeanleitung</h1>
-        
+
         <p class="tattoo-text">Achte auf Hygiene, d.h. wasche dir vor der Behandlung die Hände, vermeide Kontakt mit Schmutz, durch andere Personen oder Haustiere.
         Trage die Salbe immer nur hauchdünn, dafür mehrmals am Tag auf! Zu dick aufgetragene Salbe lässt die Tätowierung immer wieder aufweichen und behindert dadurch die Wundheilung.
         Trage nur locker anliegende Kleidung (Baumwolle) um nicht mit den Textilien zu verkleben.
         Sollte deine Tätowierung dennoch einmal verkleben, auf keinen Fall einfach abziehen oder gewaltsam lösen, sondern unter fliessendem Wasser vorsichtig anweichen und langsam entfernen.
         Vermeide bis zur vollständigen Abheilung (ca. 3-4 Wochen) Kontaktsportarten, Salzwasser, Seewasser, Chlorwasser, Sauna, Solarium und direkte Sonneneinstrahlung.
         Auf keinen Fall kratzen oder den losen Schorf entfernen. Dieser sollte von selbst abfallen, da sonst die untere Hautschicht geschädigt wird und es dadurch zu Farbverlust und Vernarbung kommen kann.
-        </p>    
+        </p>
 
         <div class="documents">
             <button class="single-document">
@@ -91,5 +101,5 @@
             <span class="document-text">Einverständniserklärung herunterladen</span>
         </button>
 
-    </div>    
+    </div>
 </section>

@@ -1,6 +1,16 @@
 <section class="removal-content-wrap">
     <div class="removal-content">
 
+        @if($services)
+            @foreach($services as $service)
+                <a style="margin-left: 400px; margin-top: 200px; text-decoration:none;" href="/reservations/{{$service->id}}">Reserve termin for {{$service->service_name}} | Price {{$service->price}}CHF | Duration {{$service->duration}} MIN</a> <br>
+                <br>
+            @endforeach
+
+        @else
+            NO SERVICES
+        @endif
+
         <span class="removal-overtitle">Think before you</span>
         <h1 class="removal-title">INK</h1>
 
@@ -60,7 +70,46 @@
             </div>
         </div>
 
-        <section class="removal-pricing">
+
+
+                <section class="removal-pricing">
+                    <div class="bg-effect"></div>
+                    <div class="tbl-header">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            @if($services)
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Duration</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="tbl-content">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                            @foreach($services as $service)
+                                <tr>
+                                    <td>{{$service->service_name}}</td>
+                                    <td>{{$service->price}} CHF</td>
+                                    <td>{{$service->duration}} MIN</td>
+                                    <td><a href="/reservations/{{$service->id}}">Reserve termin</a></td>
+                                </tr>
+                            @endforeach
+
+                            @else
+                                NO SERVICES
+                            </tbody>
+                            @endif
+                        </table>
+                    </div>
+                </section>
+
+
+
+<!--        <section class="removal-pricing">
             <div class="bg-effect"></div>
             <div class="tbl-header">
                 <table cellpadding="0" cellspacing="0" border="0">
@@ -128,11 +177,11 @@
                     </tbody>
                 </table>
             </div>
-        </section>
+        </section>-->
 
         <h1 class="removal-title-advice">WIR GARANTIEREN</h1>
-        
+
         <p class="removal-text">bei der Beratung wird durch unser Fachpersonal die Anzahl der benötigten Sitzungen festgelegt. Jede weitere Sitzung ist
-        für dich KOSTENLOS</p>    
-    </div>    
+        für dich KOSTENLOS</p>
+    </div>
 </section>

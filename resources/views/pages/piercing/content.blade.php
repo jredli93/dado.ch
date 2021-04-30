@@ -1,6 +1,16 @@
 <section class="piercing-content-wrap">
     <div class="piercing-content">
 
+        @if($services)
+            @foreach($services as $service)
+                <a style="margin-left: 400px; margin-top: 200px; text-decoration:none;" href="/reservations/{{$service->id}}">Reserve termin for {{$service->service_name}} | Price {{$service->price}}CHF | Duration {{$service->duration}} MIN</a> <br>
+                <br>
+            @endforeach
+
+        @else
+            NO SERVICES
+        @endif
+
         <span class="piercing-overtitle">Our process of</span>
         <h1 class="piercing-title">Piercing</h1>
 
@@ -10,7 +20,7 @@
         überlegt sein, deshalb legen wir wert auf einen reibungslosen Ablauf. Bei uns im Studio verwenden wir ausschliesslich
         Qualitätsprodukte von höchstem Standard. Du kannst direkt online einen Piercingtermin buchen oder spontan bei uns im
         Studio vorbeikommen
-        
+
         auf gut Glück.</p>
 
         <div class="process-wrap">
@@ -24,7 +34,7 @@
                     kennenlernen kannst.</p>
                 </div>
                 <div class="process-single">
-                    <img class="process-single-icon" src="/images/icons-tattoo/029-tattoo.png" alt="">               
+                    <img class="process-single-icon" src="/images/icons-tattoo/029-tattoo.png" alt="">
                     <h2 class="process-single-title">Studio</h2>
                     <p class="process-singletext">Unser Studio ist unser Herzstück. Damit du dich genau so wohlfühlen kannst wie wir, zeigen dir unsere Piercer gerne
                     alles und erzählen dir alles über Hygiene, Sicherheit und Schmuckvielfalt.</p>
@@ -59,20 +69,20 @@
         </div>
 
         <h1 class="piercing-title-advice">Pflegeanleitung</h1>
-        
+
         <p class="piercing-text">Achte auf Hygiene, d.h. wasche dir vor der Behandlung die Hände, vermeide Kontakt mit Schmutz, durch andere Personen
         oder Haustiere.
-        
+
         Trage das Desinfektionsmittel mehrmals am Tag auf! .
-        
+
         ​
-        
+
         Vermeide bis zur vollständigen Abheilung (ca. 3-4 Wochen) Kontaktsportarten, Salzwasser, Seewasser, Chlorwasser, Sauna,
         Solarium und direkte Sonneneinstrahlung.
-        
+
         Auf keinen Fall kratzen oder den losen Schorf entfernen. Dieser sollte von selbst abfallen, da sonst die untere
         Hautschicht geschädigt wird.
-        </p>    
+        </p>
 
         <div class="documents">
             <button class="single-document">
@@ -94,5 +104,5 @@
             <span class="document-text">Einverständniserklärung herunterladen</span>
         </button>
 
-    </div>    
+    </div>
 </section>
