@@ -56,5 +56,7 @@
     <script src="{{ asset('js/main.js') }}" defer></script>
     <script src="{{ asset('js/mobile-menu.js') }}" defer></script>
     <script src="{{ asset('js/accordion.js') }}" defer></script>
+    <script src="{{ asset('js/reservations.js') }}" defer></script>
+    
 </body>
 </html>

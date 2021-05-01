@@ -63,5 +63,6 @@
     <script src="https://kit.fontawesome.com/5abe40685b.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/map.js') }}" defer></script>
     <script src="{{ asset('js/mobile-menu.js') }}" defer></script>
+    <script src="{{ asset('js/reservations.js') }}" defer></script>
 </body>
 </html>

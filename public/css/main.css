@@ -780,6 +780,34 @@
   text-shadow: 0px 0px 5px #0f0f0f;
 }
 
+.tattoo-content-wrap .reservation-info {
+  position: fixed;
+  background: grey;
+  top: 14rem;
+  right: 0.5rem;
+  width: 17rem;
+  padding: 1.5rem;
+  height: auto;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.tattoo-content-wrap .reservation-info .reservation-info-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 3rem;
+  background: white;
+  border: 1px solid white;
+  color: black;
+  margin-top: 0.5rem;
+}
+.tattoo-content-wrap .reservation-info .reservation-slot {
+  display: block;
+  border: 1px solid white;
+  margin-top: 0.4rem;
+  text-align: center;
+}
 .tattoo-content-wrap .tattoo-content {
   max-width: 70vw;
   margin: 0 auto;

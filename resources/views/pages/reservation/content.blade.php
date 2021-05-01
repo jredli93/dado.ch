@@ -6,25 +6,10 @@
         <input id="id" type="hidden" value="{{$id}}">
         <meta name="csrf-token" id="csrf-token" content="{{ csrf_token() }}">
     </div>
-
-    <script>
-
-        $(document).on('click',".fc-day",function(){
-
-            let date = $(this).data('date');
-            var service_type_id = $('#id').val();
-
-            $.ajax({
-                type: "POST",
-                url: '/reservations/free/dates',
-                data: { date, service_type_id, "_token": $('#csrf-token')[0].content },
-                success: function (response) {
-                    console.log(response)
-                },
-                error: function () {
-                },
-            });
-        });
-
-    </script>
+    <div class="reservation-info">
+        <span class="reservation-info-disclaimer">Für Terminabsagen behalten wir uns vor eine Umtriebsentschädigung in Rechnung
+                    zu stellen.</span>
+        <button class="reservation-info-btn">Book</button>
+        <div class="reservation-slots"></div>
+    </div>
 </section>
