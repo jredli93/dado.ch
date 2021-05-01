@@ -15,11 +15,12 @@ use App\Http\Controllers\PageController;
 */
 
 Auth::routes();
-
+Route::middleware(['cors'])->group(function () {
+    Route::post('reservations/create', 'ReservationController@createReservation')->name('create.reservation');
+});
 Route::prefix('reservations')->group(function (){
     Route::get('/{id}', 'ReservationController@index')->name('reservation.index');
     Route::post('/free/dates', 'ReservationController@getFreePeriods')->name('reservation.free.dates');
-    Route::post('/create', 'ReservationController@createReservation')->name('create.reservation');
 });
 
 Route::get('/', 'PageController@index')->name('home');
@@ -28,3 +29,4 @@ Route::get('/tattoo', 'PageController@tattoo')->name('tattoo');
 Route::get('/removal', 'PageController@removal')->name('removal');
 Route::get('/studio', 'PageController@studio')->name('studio');
 Route::get('/piercing', 'PageController@piercing')->name('piercing');
+Route::get('/form', 'PageController@form')->name('form');

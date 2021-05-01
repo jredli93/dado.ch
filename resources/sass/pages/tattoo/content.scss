@@ -13,14 +13,18 @@
         color: white;
 
         .reservation-info-btn {
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-            height: 3rem;
-            background: white;
-            border: 1px solid white;
-            color: black;
-            margin-top: 0.5rem;
+                display: flex;
+                text-decoration: none;
+                height: 3rem;
+                background: white;
+                color: black;
+                margin-top: 0.5rem;
+                align-items: center;
+                justify-content: center;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .reservation-slot {
@@ -28,6 +32,12 @@
             border: 1px solid white;
             margin-top: 0.4rem;
             text-align: center;
+
+            &:hover {
+                background: $text-white;
+                color: $dark-black;
+                cursor: pointer;
+            }
         }
     }
 

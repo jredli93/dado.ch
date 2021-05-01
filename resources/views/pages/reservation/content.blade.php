@@ -9,7 +9,7 @@
     <div class="reservation-info">
         <span class="reservation-info-disclaimer">Für Terminabsagen behalten wir uns vor eine Umtriebsentschädigung in Rechnung
                     zu stellen.</span>
-        <button class="reservation-info-btn">Book</button>
+        <a href="{{ URL::route('form') }}" class="reservation-info-btn">Book</a>
         <div class="reservation-slots"></div>
     </div>
 </section>

@@ -16,6 +16,10 @@ class PageController extends Controller
     public function faq() {
         return view('pages.faq.index');
     }
+    
+    public function form() {
+        return view('pages.form.index');
+    }
 
     public function tattoo() {
 
