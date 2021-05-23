@@ -4,6 +4,7 @@ $(document).on('click',".fc-day",function(){
     var service_type_id = $('#id').val();
     let reservationSlots = $(".reservation-slots");
     let reservationSlot = ''
+    localStorage.setItem('date', date);
 
     $.ajax({
         type: "POST",
@@ -21,38 +22,46 @@ $(document).on('click',".fc-day",function(){
     });
 });
 
-localStorage.setItem("service_type_id", window.location.pathname.split("/").pop());
-
 $(document).on('click', ".reservation-slot", function () {
     localStorage.setItem("time", this.dataset.slot);
 });
 
+$('.time-slot-reservation').on('click', function () {
+    localStorage.setItem("service-type-id", $(this).data('service'));
+})
+
+
 $(document).on('click', ".form-submit", function () {
     let time = localStorage.getItem('time');
-    let service_type_id = localStorage.getItem('service_type_id');
+    let service_type_id = localStorage.getItem('service-type-id');
+    let date = localStorage.getItem('date');
     let phone = $('.contact-phone').val();
     let email = $('.contact-email').val();
     let comment = $('.contact-ta').val();
     let fullname = $('.contact-name').val();
-    let date = "2021-02-22"
 
     $.ajax({
         type: "POST",
         url: '/reservations/create',
         data: {
+            name: fullname,
             time,
             service_type_id,
             phone,
             comment,
-            fullname,
             email,
+            status: 'Active',
             date,
             "_token": $('#csrf-token')[0].content
         },
-        success: function (response) {
-            console.log(`response`, response)
+        success: function (res) {
+            console.log('res: ', res)
+            localStorage.removeItem('date');
+            localStorage.removeItem('time');
+            localStorage.removeItem('service-type-id');
         },
-        error: function () {
+        error: function (err) {
+            console.log('err: ' ,err)
         },
     });
 });
