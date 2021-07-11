@@ -26,14 +26,13 @@ class CreateReservationRequest extends FormRequest
     public function rules()
     {
         return [
-            'service_type_id' => 'required|integer',
+            'service_type_id' => 'required',
             'name' => 'required|string',
             'email' => 'required|email',
             'phone' => 'required|string',
             'comment' => 'string',
             'date' => 'required|string',
             'time' => 'required|string',
-            'status' => 'required|string'
         ];
     }
 

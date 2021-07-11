@@ -2,7 +2,7 @@
     # Dobrodošli,
 
     Podaci o rezervaciji termina:
-    Service type: {{$data->serviceType->service_name}}
+    Service type: {{$data->serviceType ? $data->serviceType->service_name : 'No reservation type'}}
     Name: {{$data->name}}
     Email: {{$data->email}}
     Date: {{$data->date}}
