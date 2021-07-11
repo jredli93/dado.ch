@@ -30,3 +30,10 @@ Route::get('/removal', 'PageController@removal')->name('removal');
 Route::get('/studio', 'PageController@studio')->name('studio');
 Route::get('/piercing', 'PageController@piercing')->name('piercing');
 Route::get('/form', 'PageController@form')->name('form');
+
+Auth::routes();
+
+Route::get('/admin', 'AdminController@index')->name('admin.index');
+Route::post('/admin/block', 'AdminController@block')->name('admin.block');
+Route::delete('/unblock/{id}', 'AdminController@unblock')->name('unblock');
+

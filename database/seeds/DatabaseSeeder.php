@@ -17,6 +17,20 @@ class DatabaseSeeder extends Seeder
         $this->call(ServiceTypeSeeder::class);
         $this->call(ReservationSeeder::class);
 
+        DB::table('users')->insertOrIgnore([
+            'name' => 'Super Admin',
+            'email' => 'superadmin@gmail.com',
+            'role_id' => 1,
+            'email_verified_at' => now(),
+            'password' => \Illuminate\Support\Facades\Hash::make('SuperAdmin1'),
+            'remember_token' => \Illuminate\Support\Str::random(10),
+        ]);
+
+        DB::table('roles')->insertOrIgnore([
+            'id' => 1,
+            'name' => 'Super Admin',
+        ]);
+
         $days = ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'];
         $serviceTypes = ServiceType::all();
 
