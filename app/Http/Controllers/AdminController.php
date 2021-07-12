@@ -13,6 +13,7 @@ class AdminController extends Controller
     {
         $reservations = Reservation::where('email', 'superadmin@gmail.com')
             ->orderBy('date', 'DESC')
+            ->take(500)
             ->get();
 
         return view('admin.index', compact('reservations'));
