@@ -88,7 +88,7 @@ class ReservationController extends Controller
                 }
                 //Returns message for no free periods
                 if ($periods->where('status', 'Active')->isEmpty()){
-                    return 'There is no free periods';
+                    return false;
                 }
                 //All free period per selected day
                 return $periods->where('status', 'Active')->pluck('time');
