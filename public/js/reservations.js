@@ -1,10 +1,12 @@
 $(document).on('click',".fc-day",function(){
 
     let date = $(this).data('date');
-    var service_type_id = $('#id').val();
+    let service_type_id = $('#serviceTypeId').val();
     let reservationSlots = $(".reservation-slots");
     let reservationSlot = ''
     localStorage.setItem('date', date);
+
+    let userRoleName = $('#userRoleName')[0].content;
 
     $.ajax({
         type: "POST",
@@ -14,6 +16,9 @@ $(document).on('click',".fc-day",function(){
             reservationSlots.innerHtml = '';
             $.each(response, function (index) {
                 reservationSlot += `<div class="reservation-slot" data-slot=${response[index]}>${response[index]}</div>`;
+                if (userRoleName && userRoleName == 'Super Admin'){
+                    reservationSlot += `<a href="#" id="blockTermin" data-id="${index}" class="reservation-info-btn fb-like${index}">Block Termin</a>`
+                }
             })
             reservationSlots.html(reservationSlot);
         },
@@ -26,6 +31,28 @@ $(document).on('click', ".reservation-slot", function () {
     localStorage.setItem("time", this.dataset.slot);
 });
 
+$(document).on('click', "#blockTermin", function () {
+
+    let prevDiv = $(this).prev("div")[0]
+    let time = prevDiv.dataset.slot;
+    let fullDate = localStorage.getItem('date');
+    let blockButton = $( ".fb-like" + $(this)[0].dataset.id);
+    let serviceTypeId = $('#serviceTypeId').val();
+
+    $.ajax({
+        type: "POST",
+        url: '/admin/block',
+        data: { fullDate, time, serviceTypeId, "_token": $('#csrf-token')[0].content },
+        success: function (response) {
+            prevDiv.remove();
+            blockButton.remove();
+        },
+        error: function () {
+        },
+    });
+
+});
+
 $('.time-slot-reservation').on('click', function () {
     localStorage.setItem("service-type-id", $(this).data('service'));
 })
@@ -33,8 +60,8 @@ $('.time-slot-reservation').on('click', function () {
 
 $(document).on('click', ".form-submit", function () {
     let time = localStorage.getItem('time');
-    let service_type_id = localStorage.getItem('service-type-id');
     let date = localStorage.getItem('date');
+    let service_type_id = $('.serviceTypeId').val();
     let phone = $('.contact-phone').val();
     let email = $('.contact-email').val();
     let comment = $('.contact-ta').val();

@@ -5,6 +5,7 @@
             <form method="POST">
                 @csrf
             </form>
+            <input type="hidden" class="input serviceTypeId" name="serviceTypeId" value="{{$id}}">
             <input type="text" class="input contact-name" name="contact-name" placeholder="Name" required>
             <input type="email" class="input contact-email" placeholder="Email" name="Email" required>
             <input type="text" class="input contact-phone" name="contact-phone" placeholder="Phone" name="Phone" required>

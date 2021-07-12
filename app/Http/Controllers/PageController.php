@@ -17,8 +17,8 @@ class PageController extends Controller
         return view('pages.faq.index');
     }
 
-    public function form() {
-        return view('pages.form.index');
+    public function form($id) {
+        return view('pages.form.index', compact('id'));
     }
 
     public function tattoo() {

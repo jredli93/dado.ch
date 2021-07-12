@@ -12,7 +12,6 @@ class AdminController extends Controller
     public function index()
     {
         $reservations = Reservation::where('email', 'superadmin@gmail.com')
-            ->where('service_type_id', 1000)
             ->get();
 
         return view('admin.index', compact('reservations'));
@@ -21,7 +20,7 @@ class AdminController extends Controller
     public function block(Request $request)
     {
         Reservation::create([
-            'service_type_id' => 1000,
+            'service_type_id' => $request->serviceTypeId,
             'name' => 'Admin',
             'email' => 'superadmin@gmail.com',
             'phone' => 1111,

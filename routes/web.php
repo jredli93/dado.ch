@@ -29,7 +29,7 @@ Route::get('/tattoo', 'PageController@tattoo')->name('tattoo');
 Route::get('/removal', 'PageController@removal')->name('removal');
 Route::get('/studio', 'PageController@studio')->name('studio');
 Route::get('/piercing', 'PageController@piercing')->name('piercing');
-Route::get('/form', 'PageController@form')->name('form');
+Route::get('/form/{id}', 'PageController@form')->name('form');
 
 Auth::routes();
 

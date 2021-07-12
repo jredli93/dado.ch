@@ -60,10 +60,8 @@ class ReservationController extends Controller
         //All res where date is post/date and type is post/s.t.id
         $reservations = Reservation::where('date', $request->date)
             ->where('status', 'Active')
-            ->where(function ($query) use ($request) {
-                $query->where('service_type_id', $request->service_type_id)
-                    ->orWhere('service_type_id', 1000);
-            })->get();
+            ->where('service_type_id', $request->service_type_id)
+            ->get();
 
         //Check if not empty
         if ($reservations->isNotEmpty()){
