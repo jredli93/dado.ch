@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Super Admin',
         ]);
 
-        $days = ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'];
+        $days = ['Tuesday', 'Wednesday','Thursday','Friday','Saturday'];
         $serviceTypes = ServiceType::all();
 
         foreach ($days as $day){
@@ -45,7 +45,19 @@ class DatabaseSeeder extends Seeder
                 DB::table('periods')->insertOrIgnore([
                     'service_type_id' => $serviceType->id,
                     'day' => $day,
+                    'time' => '12:30:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
                     'time' => '13:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '13:30:00'
                 ]);
 
                 DB::table('periods')->insertOrIgnore([
@@ -57,9 +69,20 @@ class DatabaseSeeder extends Seeder
                 DB::table('periods')->insertOrIgnore([
                     'service_type_id' => $serviceType->id,
                     'day' => $day,
+                    'time' => '14:30:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
                     'time' => '15:00:00'
                 ]);
 
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '15:30:00'
+                ]);
                 DB::table('periods')->insertOrIgnore([
                     'service_type_id' => $serviceType->id,
                     'day' => $day,
@@ -69,7 +92,18 @@ class DatabaseSeeder extends Seeder
                 DB::table('periods')->insertOrIgnore([
                     'service_type_id' => $serviceType->id,
                     'day' => $day,
+                    'time' => '16:30:00'
+                ]);
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
                     'time' => '17:00:00'
+                ]);
+
+                DB::table('periods')->insertOrIgnore([
+                    'service_type_id' => $serviceType->id,
+                    'day' => $day,
+                    'time' => '17:30:00'
                 ]);
 
                 DB::table('periods')->insertOrIgnore([
