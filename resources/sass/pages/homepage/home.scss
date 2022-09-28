@@ -21,8 +21,14 @@
         .cta-heading {
             font-weight: 300;
             font-size: 5.3rem;
-            line-height: 1rem;
-            font-family: $styled-text;
+            line-height: 4rem;
+            font-family: $dado-font;
+
+            @include tablet() {
+                font-size: 4.5rem;
+                line-height: unset;
+                text-align: center;
+            }
         }
 
         .cta-subheading {
@@ -47,6 +53,7 @@
             padding: 0.5rem 1.5rem;
             font-size: 1.3rem;
             color: white;
+            text-decoration: none;
             background: transparent;
             border: 0.2rem solid $green;
         }

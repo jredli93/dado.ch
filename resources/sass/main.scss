@@ -1,4 +1,12 @@
 // Variables
+
+@font-face {
+  font-family: "dado-font";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/DarkSeed.ttf");
+}
+
 @import './helpers/variables.scss';
 @import './helpers/mixins.scss';
 
@@ -19,12 +27,6 @@
 
 @import './pages/tattoo/header.scss';
 @import './pages/tattoo/content.scss';
-
-@import './pages/removal/header.scss';
-@import './pages/removal/content.scss';
-
-@import './pages/studio/header.scss';
-@import './pages/studio/content.scss';
 
 @import './pages/piercing/header.scss';
 @import './pages/piercing/content.scss';

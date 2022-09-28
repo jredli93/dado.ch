@@ -53,9 +53,13 @@
             text-align: center;
         }
 
+        .reservation-slots-wrap {
+            margin-top: 3rem;
+        }
+
         .tattoo-title {
             color: $text-white;
-            font-family: $styled-text;
+            font-family: $dado-font;
             line-height: 3.5rem;
             text-align: center;
             font-size: 5rem;
@@ -64,7 +68,7 @@
 
         .tattoo-title-advice {
             color: $text-white;
-            font-family: $styled-text;
+            font-family: $dado-font;
             line-height: 3.5rem;
             text-align: center;
             font-size: 5rem;
@@ -90,7 +94,7 @@
 
             .process-title {
                 color: $text-white;
-                font-family: $styled-text;
+                font-family: $dado-font;
                 line-height: 3.2rem;
                 text-align: center;
                 font-size: 4rem;

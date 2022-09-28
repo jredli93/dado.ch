@@ -12,7 +12,8 @@
 
     .tattoo-title {
         margin-top: 5rem;
-        font-size: 2.2rem;
+        font-size: 5rem;
+        font-family: $dado-font;
         @include text-shadow();
     }
 }

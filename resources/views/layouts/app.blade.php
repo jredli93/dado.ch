@@ -3,11 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="Dado Artist Collective is a studio.">
+    <meta name="keywords" content="Dado, Tatoo, Laser, Studio,">
+    
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Dado.ch') }}</title>
+    <title>Dado Artist Collective</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,6 +22,7 @@
     <link href="{{ asset('css/font/flaticon.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-vintage/flaticon.css') }}" rel="stylesheet">
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('/assets/images/logo.svg') }}">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <link href="{{ asset('css/vegas.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -43,9 +46,7 @@
             <ul>
                 <li><a href="{{ URL::route('home') }}">Home</a></li>
                 <li><a href="{{ URL::route('tattoo') }}">Tattoo</a></li>
-                <li><a href="{{ URL::route('piercing') }}">Piercing</a></li>
-                <li><a href="{{ URL::route('studio') }}">Studio</a></li>
-                <li><a href="{{ URL::route('removal') }}">Removal</a></li>
+                <li><a href="{{ URL::route('laser') }}">Laser</a></li>
                 <li><a href="{{ URL::route('faq') }}">FAQ</a></li>
             </ul>
         </nav>

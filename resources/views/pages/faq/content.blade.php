@@ -87,7 +87,7 @@
 
 
 
-    <h1 class="faq-title">Piercing</h1>
+    <h1 class="faq-title">Laser</h1>
     <div class="faq-content">
         <div class="b-faq">
             <div class="faq__item">
@@ -191,76 +191,5 @@
                 </div>
             </div>
         </div>
-    </div>   
-    
-    
-
-
-
-
-    <h1 class="faq-title">Tattooentfernung</h1>
-    <div class="faq-content">
-        <div class="b-faq">
-            <div class="faq__item">
-                <a href="#" class="faq__title js-faq-title">
-                    <div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div>
-                    <span class="faq__text">Können alle Farben entfernt werden?</span>
-                </a>
-                <div class="faq__content js-faq-content">
-                    <p class="faq-text">Ja, dunkle Farben sowie Schwarz können besonders gut entfernt werden. Dank unserem hochwertigen Laser mit der neuen
-                    Pikosekundentechnoligie können wir sogar schwierige Farben wie Gelb oder Weiss entfernen.</p>
-                </div>
-            </div>
-        </div>
-        <div class="b-faq">
-            <div class="faq__item">
-                <a href="#" class="faq__title js-faq-title">
-                    <div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div>
-                    <span class="faq__text">Tut Lasern weh?</span>
-                </a>
-                <div class="faq__content js-faq-content">
-                    <p class="faq-text">Eine ganz schmerzfreie Behandlung stellt die Tattooentfernung nicht dar. Das Schmerzempfinden ist bei jeder Person
-                    unterschiedlich. Entwarnung: Dank der Pikosekundentechnologie, bewegen sich die Lichtimpulse im Pikosekundenbreiech und
-                    ist somit viel weniger schmerzhaft als bei anderen herkömmlichen Tattooentfernungsgeräte.</p>
-                </div>
-            </div>
-        </div>
-        <div class="b-faq">
-            <div class="faq__item">
-                <a href="#" class="faq__title js-faq-title">
-                    <div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div>
-                    <span class="faq__text">Kann ein Tattoo restlos entfernt werden?</span>
-                </a>
-                <div class="faq__content js-faq-content">
-                    <p class="faq-text">Natürlich! Unsere Spezialisten analysieren das zu entfernende Tattoo und können die Behandlungen genau abschätzen, um
-                    das gewünschte Endergebnis zu erreichen.</p>
-                </div>
-            </div>
-        </div>
-        <div class="b-faq">
-            <div class="faq__item">
-                <a href="#" class="faq__title js-faq-title">
-                    <div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div>
-                    <span class="faq__text">Bleiben nach der Tattooentfernung Narben ersichtlich?</span>
-                </a>
-                <div class="faq__content js-faq-content">
-                    <p class="faq-text">Nein. Dank der Belichtungszeit unseres Lasers im Pikosekundenbereich, zeichnet sich der grosse Vorteil aus, eine sehr
-                    schonende Behandlung durchzuführen. Mit unserem erfahrenen Fachpersonal kann jedes Tattoo narbenfrei entfernt werden.</p>
-                </div>
-            </div>
-        </div>
-        <div class="b-faq">
-            <div class="faq__item">
-                <a href="#" class="faq__title js-faq-title">
-                    <div class="faq__spoiler js-faq-rotate"><span class="faq__symbol ">+</span></div>
-                    <span class="faq__text">Wie teuer ist die Tattooentfernung?</span>
-                </a>
-                <div class="faq__content js-faq-content">
-                    <p class="faq-text">Hierfür haben wir ein preisgünstiges Konzept erstellt, zum Vorteil unserer Kunden. Zur Auswahl bieten wir vierschiedene
-                    Kombis in Zusammenhang mit einem Coverup. Unser Ziel ist, dass wir gemeinsam durch ein günstiges Komplettangebot deine
-                    Jugendsünde in ein Meisterwerk verwandeln.</p>
-                </div>
-            </div>
-        </div>
-    </div>    
+    </div>       
 </section>

@@ -7,6 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(ServiceGroup::class, function (Faker $faker) {
     return [
-        'name' => $faker->unique()->randomElement(['piercing', 'tattoo', 'removal']),
+        'name' => $faker->unique()->randomElement(['tattoo', 'laser']),
     ];
 });

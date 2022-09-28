@@ -2,7 +2,7 @@
     <div class="cta-content">
         <div class="cta-left">
             {{-- <img src="/assets/images/border.png" class="cta-border" alt=""> --}}
-            <h1 class="cta-title">Dado.ch</h1>
+            <h1 class="cta-title">Dado Artist Collective</h1>
             <p class="cta-subtitle">WIR STEHEN FÜR KUNST DIE UNTER DIE HAUT GEHT</p>
             <p class="cta-text">Kreativität, Individualismus und Einzigartigkeit steht bei uns an der Tagesordnung. Wir stechen dir dein persönliches
             Kunstwerk mit garantiertem Wiedererkennungseffekt.</p>

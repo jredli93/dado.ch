@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" id="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Dado.ch') }}</title>
+    <title>Dado Artist Collective</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,9 +40,7 @@
             <ul>
                 <li><a href="{{ URL::route('home') }}">Home</a></li>
                 <li><a href="{{ URL::route('tattoo') }}">Tattoo</a></li>
-                <li><a href="{{ URL::route('piercing') }}">Piercing</a></li>
-                <li><a href="{{ URL::route('studio') }}">Studio</a></li>
-                <li><a href="{{ URL::route('removal') }}">Removal</a></li>
+                <li><a href="{{ URL::route('laser') }}">Laser</a></li>
                 <li><a href="{{ URL::route('faq') }}">FAQ</a></li>
             </ul>
         </nav>

@@ -1,9 +1,9 @@
-<section class="contact-wrap">
+<section id="contact-wrap" class="contact-wrap">
     <div class="contact">
-        <h1 class="contact-title">Contact</h1>
+        <h1 class="contact-title">Kontakt</h1>
         <div class="contact-info-wrap">
             <div class="info">
-                <h2 class="info-title">Dado tattoo</h2>
+                <h2 class="info-title">Dado Artist Collective</h2>
                 <span class="info-subtitle">St Gallerstrasse 65</span>
             </div>
             <div class="info">

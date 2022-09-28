@@ -43,12 +43,11 @@ class PageController extends Controller
         return view('pages.studio.index');
     }
 
-    public function piercing() {
-
+    public function laser() {
         $services = ServiceType::whereHas('serviceGroup', function($q){
-            $q->where('name', 'piercing');
+            $q->where('name', 'laser');
         })->get();
 
-        return view('pages.piercing.index', compact('services'));
+        return view('pages.laser.index', compact('services'));
     }
 }

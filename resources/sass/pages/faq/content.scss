@@ -2,7 +2,7 @@
 
     .faq-title {
         color: $text-white;
-        font-family: $styled-text;
+        font-family: $dado-font;
         line-height: 3.5rem;
         text-align: center;
         font-size: 5rem;
@@ -14,7 +14,7 @@
     .faq-content {
         max-width: 60vw;
         margin: 0 auto;
-        font-family: $styled-text;
+        font-family: $dado-font;
 
         .b-faq .faq__title {
             position: relative;

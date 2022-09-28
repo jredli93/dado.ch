@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Dado.ch'),
+    'name' => env('APP_NAME', 'Dado Artist Collective'),
 
     /*
     |--------------------------------------------------------------------------

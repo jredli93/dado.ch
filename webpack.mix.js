@@ -12,6 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/main.js', 'public/js')
+    .copyDirectory('resources/fonts', 'public/fonts')
     .sass('resources/sass/main.scss', 'public/css')
     .options({
       processCssUrls: false

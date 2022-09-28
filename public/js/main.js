@@ -134,8 +134,8 @@ $("#ex1").modal({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/dado/resources/js/main.js */"./resources/js/main.js");
-module.exports = __webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/dado/resources/sass/main.scss */"./resources/sass/main.scss");
+__webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/dado.ch/resources/js/main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/dado.ch/resources/sass/main.scss */"./resources/sass/main.scss");
 
 
 /***/ })

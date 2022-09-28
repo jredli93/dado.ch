@@ -47,6 +47,10 @@
         .navigation-item {
             font-size: 1.2rem;
 
+            a {
+                text-decoration: none;
+            }
+
             .navigation-item-logo {
                 width: 200px;
                 filter: invert(100%);

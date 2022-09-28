@@ -10,25 +10,25 @@
                     <div class="artist-image ai1">
                         <p class="artist-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum deleniti sit corporis molestias provident eius quas amet sint ipsa!</p>
                     </div>
-                    <h2 class="artist-name">John Doe</h2>
+                    <h2 class="artist-name">Dado</h2>
                 </div>
                 <div class="carousel-cell">
                     <div class="artist-image ai2">
                         <p class="artist-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum deleniti sit corporis molestias provident eius quas amet sint ipsa!</p>
                     </div>
-                    <h2 class="artist-name">John Doe</h2>
+                    <h2 class="artist-name">David</h2>
                 </div>
                 <div class="carousel-cell">
                     <div class="artist-image ai3">
                         <p class="artist-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum deleniti sit corporis molestias provident eius quas amet sint ipsa!</p>
                     </div>
-                    <h2 class="artist-name">John Doe</h2>
+                    <h2 class="artist-name">Leo</h2>
                 </div>
                 <div class="carousel-cell">
                     <div class="artist-image ai4">
                         <p class="artist-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum deleniti sit corporis molestias provident eius quas amet sint ipsa!</p>
                     </div>
-                    <h2 class="artist-name">John Doe</h2>
+                    <h2 class="artist-name">Peter</h2>
                 </div>
             </div>
         </div>

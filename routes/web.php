@@ -26,7 +26,5 @@ Route::prefix('reservations')->group(function (){
 Route::get('/', 'PageController@index')->name('home');
 Route::get('/faq', 'PageController@faq')->name('faq');
 Route::get('/tattoo', 'PageController@tattoo')->name('tattoo');
-Route::get('/removal', 'PageController@removal')->name('removal');
-Route::get('/studio', 'PageController@studio')->name('studio');
-Route::get('/piercing', 'PageController@piercing')->name('piercing');
+Route::get('/laser', 'PageController@laser')->name('laser');
 Route::get('/form', 'PageController@form')->name('form');
