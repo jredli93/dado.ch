@@ -1,12 +1,21 @@
 <?php
 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-
-use App\ServiceGroup;
-use Faker\Generator as Faker;
-
-$factory->define(ServiceGroup::class, function (Faker $faker) {
-    return [
-        'name' => $faker->unique()->randomElement(['tattoo', 'laser']),
-    ];
-});
+namespace Database\Factories;
+ 
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+ 
+class ServiceGroupFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'name' => $this->faker->randomElement(['tattoo', 'laser']),
+        ];
+    }
+}

@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class ReservationSeeder extends Seeder
@@ -11,6 +13,6 @@ class ReservationSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Reservation::class, 5)->create();
+        \App\Reservation::factory()->count(5)->create();
     }
 }

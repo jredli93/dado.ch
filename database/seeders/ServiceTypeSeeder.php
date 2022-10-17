@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
 class ServiceTypeSeeder extends Seeder
@@ -11,6 +13,6 @@ class ServiceTypeSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\ServiceType::class, 15)->create();
+         \App\ServiceType::factory()->count(15)->create(); 
     }
 }
