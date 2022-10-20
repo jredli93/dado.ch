@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Acaronlex\LaravelCalendar\Calendar;
-use App\Events\NewReservationEvent;
+use App\Http\Events\NewReservationEvent;
 use App\Http\Requests\Reservation\CreateReservationRequest;
 use App\Http\Requests\Reservation\GetFreeReservationRequest;
 use App\Period;
