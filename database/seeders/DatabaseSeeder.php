@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call(ServiceTypeSeeder::class);
         $this->call(ReservationSeeder::class);
 
-        $days = ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'];
+        // $days = ['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'];
+        $days = ['Tuesday', 'Wednesday','Thursday','Friday','Saturday'];
         $serviceTypes = \App\ServiceType::all();
 
         foreach ($days as $day){

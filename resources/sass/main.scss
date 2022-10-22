@@ -1,35 +1,35 @@
 // Variables
 
 @font-face {
-  font-family: "dado-font";
-  font-style: normal;
-  font-weight: 600;
-  src: url("/fonts/DarkSeed.ttf");
+    font-family: "dado-font";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/DarkSeed.ttf");
 }
 
-@import './helpers/variables.scss';
-@import './helpers/mixins.scss';
+@import "./helpers/variables.scss";
+@import "./helpers/mixins.scss";
 
 // Pages
-@import './pages/homepage/home.scss';
-@import './pages/homepage/showcase.scss';
-@import './pages/homepage/cta.scss';
-@import './pages/homepage/artists.scss';
-@import './pages/homepage/service.scss';
-@import './pages/homepage/contact.scss';
-@import './pages/homepage/footer.scss';
+@import "./pages/homepage/home.scss";
+@import "./pages/homepage/showcase.scss";
+@import "./pages/homepage/cta.scss";
+@import "./pages/homepage/artists.scss";
+@import "./pages/homepage/service.scss";
+@import "./pages/homepage/contact.scss";
+@import "./pages/homepage/footer.scss";
 
-@import './pages/faq/header.scss';
-@import './pages/faq/content.scss';
+@import "./pages/faq/header.scss";
+@import "./pages/faq/content.scss";
 
-@import './pages/form/header.scss';
-@import './pages/form/content.scss';
+@import "./pages/form/header.scss";
+@import "./pages/form/content.scss";
 
-@import './pages/tattoo/header.scss';
-@import './pages/tattoo/content.scss';
+@import "./pages/tattoo/header.scss";
+@import "./pages/tattoo/content.scss";
 
-@import './pages/piercing/header.scss';
-@import './pages/piercing/content.scss';
+@import "./pages/piercing/header.scss";
+@import "./pages/piercing/content.scss";
 
 // Global
 * {
@@ -44,7 +44,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .overlay {
     display: none;
     width: 100vw;
@@ -56,6 +55,28 @@ html {
     bottom: 0;
     background-color: #0f0f0ff2;
     z-index: 99999;
+}
+
+.calendar-wide {
+    margin-left: 400px;
+    margin-right: 400px;
+
+    @include laptop() {
+        margin: 0 auto;
+    }
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    background:white;
+    width: 250px;
+    padding: 1.5rem;
+    color: black;
+    font-size: 1.1rem;
 }
 
 .nav-colored {
@@ -94,7 +115,6 @@ html {
     right: 21px;
     font-size: 2rem;
 }
-
 
 @media (max-width: 1024px) {
     html {
@@ -137,4 +157,3 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #305c5c;
 }
-

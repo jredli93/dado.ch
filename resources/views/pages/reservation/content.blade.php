@@ -1,6 +1,6 @@
 <section class="tattoo-content-wrap">
 
-    <div style="margin-left: 400px; margin-right: 400px">
+    <div class="calendar-wide">
         {!! $calendar->calendar() !!}
         {!! $calendar->script() !!}
         <input id="id" type="hidden" value="{{$id}}">

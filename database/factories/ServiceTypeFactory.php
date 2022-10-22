@@ -15,7 +15,7 @@ class ServiceTypeFactory extends Factory
     public function definition()
     {
         return [
-            'service_name' => $this->faker->randomElement(['test 1', 'test2 ' ,'test3', 'test4']),
+            'service_name' => $this->faker->randomElement(['tattoo', 'laser']),
             'price' => $this->faker->numberBetween(20, 300),
             'duration' => $this->faker->numberBetween(20, 60),
             'service_group_id' => $this->faker->numberBetween(1,3)

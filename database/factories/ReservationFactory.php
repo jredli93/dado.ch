@@ -15,7 +15,7 @@ class ReservationFactory extends Factory
     public function definition()
     {
         return [
-            'service_type_id' => $this->faker->numberBetween(1,3),
+            'service_type_id' => $this->faker->numberBetween(1, 2),
             'name' => $this->faker->name,
             'email' => $this->faker->email,
             'phone' => $this->faker->phoneNumber,

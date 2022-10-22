@@ -1,5 +1,10 @@
 .artists-wrap {
-    background-image: linear-gradient(to bottom, rgb(12 12 12), rgb(86 86 86 / 0%)), url(/assets/images/artists-background.jpg);
+    background-image: linear-gradient(
+            to bottom,
+            rgb(12 12 12),
+            rgb(86 86 86 / 0%)
+        ),
+        url(/assets/images/artists-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -41,15 +46,12 @@
                 }
 
                 .carousel-cell {
-                    background: red;
                     width: 33%;
                     height: 200px;
                     margin-right: 10px;
 
-                    @include mobile {
-                        .carousel-cell {
-                            width: 100%;
-                        }
+                    @include mobile() {
+                        width: 100%;
                     }
 
                     .artist-image {
@@ -60,19 +62,19 @@
                     }
 
                     .ai1 {
-                        background: url('/assets/images/Dado.jpg') top/cover;
+                        background: url("/assets/images/Dado.jpg") top/cover;
                     }
 
                     .ai2 {
-                        background: url('/assets/images/David.jpg') top/cover;
+                        background: url("/assets/images/David.jpg") top/cover;
                     }
 
                     .ai3 {
-                        background: url('/assets/images/Leo.jpg') top/cover;
+                        background: url("/assets/images/Leo.jpg") top/cover;
                     }
 
                     .ai4 {
-                        background: url('/assets/images/Petar.jpg') top/cover;
+                        background: url("/assets/images/Petar.jpg") top/cover;
                     }
 
                     .artist-info {
@@ -100,8 +102,6 @@
                     border-radius: 0;
                 }
             }
-
-
         }
     }
 }

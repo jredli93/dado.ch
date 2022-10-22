@@ -11,7 +11,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        $reservations = Reservation::where('email', 'superadmin@gmail.com')
+        $reservations = Reservation::where('email', 'redlijovan@gmail.com')
             ->orderBy('date', 'DESC')
             ->take(500)
             ->get();

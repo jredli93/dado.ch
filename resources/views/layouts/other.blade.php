@@ -34,6 +34,8 @@
     @yield('content')
     @yield('footer')
 
+    <div id="modal"></div>
+
     <div class="overlay overlay-slidedown">
         <i class="fas fa-times close-button"></i>
         <nav>

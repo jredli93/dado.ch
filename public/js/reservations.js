@@ -13,7 +13,7 @@ $(document).on('click',".fc-day",function(){
         success: function (response) {
             reservationSlots.innerHtml = '';
             $.each(response, function (index) {
-                reservationSlot += `<div class="reservation-slot" data-slot=${response[index]}>${response[index]}</div>`;
+                reservationSlot += `<div class="reservation-slot" data-slot=${response[index]}><span class="">x</span>${response[index]}</div>`;
             })
             reservationSlots.html(reservationSlot);
         },
@@ -56,6 +56,8 @@ $(document).on('click', ".form-submit", function () {
         },
         success: function (res) {
             console.log('res: ', res)
+            document.querySelector("#modal").style.display = "block";
+            document.querySelector("#modal").innerHTML = 'Reservation email sent!';
             localStorage.removeItem('date');
             localStorage.removeItem('time');
             localStorage.removeItem('service-type-id');

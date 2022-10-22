@@ -1,16 +1,5 @@
 <section class="piercing-content-wrap">
     <div class="piercing-content">
-
-        @if($services)
-            @foreach($services as $service)
-                <a class="time-slot-reservation" onclick='return serviceId()' data-service="{{ $service->id }}" style="margin-left: 400px; margin-top: 200px; text-decoration:none;" href="/reservations/{{$service->id}}">Reserve termin for {{$service->service_name}} | Price {{$service->price}}CHF | Duration {{$service->duration}} MIN</a> <br>
-                <br>
-            @endforeach
-
-        @else
-            NO SERVICES
-        @endif
-
         <span class="piercing-overtitle">Our process of</span>
         <h1 class="piercing-title">Laser</h1>
 
@@ -22,6 +11,18 @@
         Studio vorbeikommen
 
         auf gut Glück.</p>
+
+           @if($services)
+            @foreach($services as $service)
+               <a class="time-slot-reservation" onclick='return serviceId()' data-service="{{ $service->id }}"  href="/reservations/{{$service->id}}">
+                        <i class="fas fa-2x fa-print color-black"></i>
+                        <span class="document-text color-black">Book appointment for {{$service->service_name}}</span>
+                    </a>
+            @endforeach
+
+        @else
+            NO SERVICES
+        @endif
 
         <div class="process-wrap">
             <span class="process-overtitle">How it</span>
@@ -85,14 +86,18 @@
         </p>
 
         <div class="documents">
-            <button class="single-document">
+            <form target="_blank" action="/Pflege.pdf">
+            <button type="submit" class="single-document">
                 <i class="fas fa-2x fa-print"></i>
                 <span class="document-text">Pflegeanleitung herunterladen</span>
             </button>
-            <button class="single-document">
+            </form>
+            <form target="_blank" action="/Pflegedermalize.pdf">
+            <button type="submit" class="single-document">
                 <i class="fas fa-2x fa-print"></i>
-                <span class="document-text">Pflegeanleitung Schleimhaut / Intim herunterladen</span>
+                <span class="document-text">Pflegeanleitung (dermalize) herunterladen</span>
             </button>
+            </form>
         </div>
 
         <h2 class="legal-age">Noch nicht volljährig?</h2>

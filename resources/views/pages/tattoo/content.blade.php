@@ -13,8 +13,10 @@
         <div class="reservation-slots-wrap">
             @if($services)
                 @foreach($services as $service)
-                    <a class="time-slot-reservation" onclick='return serviceId()' data-service="{{ $service->id }}" style="margin-left: 400px; margin-top: 200px; text-decoration:none;" href="/reservations/{{$service->id}}">Reserve termin for {{$service->service_name}} | Price {{$service->price}}CHF | Duration {{$service->duration}} MIN</a> <br>
-                    <br>
+                    <a class="time-slot-reservation" onclick='return serviceId()' data-service="{{ $service->id }}"  href="/reservations/{{$service->id}}">
+                        <i class="fas fa-2x fa-print color-black"></i>
+                        <span class="document-text color-black">Book appointment for {{$service->service_name}}</span>
+                    </a>
                 @endforeach
 
             @else

@@ -405,13 +405,12 @@
   height: 100%;
 }
 .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell {
-  background: red;
   width: 33%;
   height: 200px;
   margin-right: 10px;
 }
 @media (max-width: 426px) {
-  .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .carousel-cell {
+  .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell {
     width: 100%;
   }
 }
@@ -975,7 +974,13 @@
   height: auto;
   background: transparent;
   border: 1px solid white;
+  z-index: 9999;
   color: white;
+}
+@media (max-width: 1024px) {
+  .tattoo-content-wrap .reservation-info {
+    background: black;
+  }
 }
 .tattoo-content-wrap .reservation-info .reservation-info-btn {
   display: flex;
@@ -1013,7 +1018,38 @@
   text-align: center;
 }
 .tattoo-content-wrap .tattoo-content .reservation-slots-wrap {
+  margin: 0 auto;
   margin-top: 3rem;
+  display: flex;
+  width: 360px;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+@media (max-width: 426px) {
+  .tattoo-content-wrap .tattoo-content .reservation-slots-wrap {
+    width: 100%;
+  }
+}
+.tattoo-content-wrap .tattoo-content .reservation-slots-wrap .color-black {
+  color: black;
+}
+.tattoo-content-wrap .tattoo-content .reservation-slots-wrap .reservation-icon {
+  width: 50px;
+}
+.tattoo-content-wrap .tattoo-content .reservation-slots-wrap .time-slot-reservation {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.tattoo-content-wrap .tattoo-content .reservation-slots-wrap .time-slot-reservation:hover {
+  cursor: pointer;
+}
+.tattoo-content-wrap .tattoo-content .reservation-slots-wrap .time-slot-reservation .document-text {
+  font-size: 1.2rem;
 }
 .tattoo-content-wrap .tattoo-content .tattoo-title {
   color: #efefef;
@@ -1031,6 +1067,11 @@
   font-size: 5rem;
   margin-top: 9rem;
   text-shadow: 0px 0px 10px #0f0f0f;
+}
+@media (max-width: 426px) {
+  .tattoo-content-wrap .tattoo-content .tattoo-title-advice {
+    font-size: 4rem;
+  }
 }
 .tattoo-content-wrap .tattoo-content .tattoo-text {
   margin-top: 2rem;
@@ -1072,6 +1113,11 @@
 @media (max-width: 1024px) {
   .tattoo-content-wrap .tattoo-content .process-wrap .process-container .process-single {
     flex: 0 1 calc(50% - 1rem);
+  }
+}
+@media (max-width: 426px) {
+  .tattoo-content-wrap .tattoo-content .process-wrap .process-container .process-single {
+    flex: 0 1 100%;
   }
 }
 .tattoo-content-wrap .tattoo-content .process-wrap .process-container .process-single .process-single-icon {
@@ -1192,13 +1238,46 @@
 }
 .header-piercing .piercing-title {
   margin-top: 5rem;
-  font-size: 2.2rem;
+  font-size: 5rem;
+  font-family: "dado-font";
   text-shadow: 0px 0px 5px #0f0f0f;
 }
 
 .piercing-content-wrap .piercing-content {
   max-width: 70vw;
   margin: 0 auto;
+}
+.piercing-content-wrap .piercing-content .time-slot-reservation {
+  margin: 0 auto;
+  margin-top: 3rem;
+  display: flex;
+  width: 360px;
+  padding: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+}
+@media (max-width: 426px) {
+  .piercing-content-wrap .piercing-content .time-slot-reservation {
+    width: 100%;
+  }
+}
+.piercing-content-wrap .piercing-content .time-slot-reservation:hover {
+  cursor: pointer;
+}
+.piercing-content-wrap .piercing-content .time-slot-reservation .document-text {
+  font-size: 1.2rem;
+}
+.piercing-content-wrap .piercing-content .time-slot-reservation .color-black {
+  color: black;
+}
+.piercing-content-wrap .piercing-content .time-slot-reservation .reservation-icon {
+  width: 50px;
 }
 .piercing-content-wrap .piercing-content .piercing-overtitle {
   color: #3e7f80;
@@ -1223,6 +1302,11 @@
   font-size: 5rem;
   margin-top: 9rem;
   text-shadow: 0px 0px 10px #0f0f0f;
+}
+@media (max-width: 426px) {
+  .piercing-content-wrap .piercing-content .piercing-title-advice {
+    font-size: 3rem;
+  }
 }
 .piercing-content-wrap .piercing-content .piercing-text {
   margin-top: 2rem;
@@ -1266,6 +1350,11 @@
     flex: 0 1 calc(50% - 1rem);
   }
 }
+@media (max-width: 426px) {
+  .piercing-content-wrap .piercing-content .process-wrap .process-container .process-single {
+    flex: 0 1 100%;
+  }
+}
 .piercing-content-wrap .piercing-content .process-wrap .process-container .process-single .process-single-icon {
   width: 100px;
   filter: drop-shadow(0px 0px 3px #0f0f0f) saturate(0.9);
@@ -1292,6 +1381,11 @@
     margin-top: 0.5rem;
   }
 }
+@media (max-width: 426px) {
+  .piercing-content-wrap .piercing-content .documents .single-document {
+    width: 100%;
+  }
+}
 .piercing-content-wrap .piercing-content .legal-age {
   margin-top: 4rem;
 }
@@ -1306,6 +1400,11 @@
   border: 1px solid white;
   border-radius: 4px;
   background: transparent;
+}
+@media (max-width: 426px) {
+  .piercing-content-wrap .piercing-content .legal-age-button {
+    width: 100%;
+  }
 }
 
 * {
@@ -1331,6 +1430,31 @@ html {
   bottom: 0;
   background-color: #0f0f0ff2;
   z-index: 99999;
+}
+
+.calendar-wide {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+@media (max-width: 1024px) {
+  .calendar-wide {
+    margin: 0 auto;
+  }
+}
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 250px;
+  padding: 1.5rem;
+  color: black;
+  font-size: 1.1rem;
 }
 
 .nav-colored {

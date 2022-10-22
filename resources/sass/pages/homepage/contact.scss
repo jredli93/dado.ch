@@ -33,7 +33,7 @@
             margin-top: 1.5rem;
             align-items: center;
             
-            @include laptop {
+            @include laptop() {
                 flex-direction: column;
             }
 

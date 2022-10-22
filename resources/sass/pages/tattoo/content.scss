@@ -1,5 +1,4 @@
 .tattoo-content-wrap {
-
     .reservation-info {
         position: fixed;
         background: grey;
@@ -10,17 +9,22 @@
         height: auto;
         background: transparent;
         border: 1px solid white;
+        z-index: 9999;
         color: white;
 
+        @include laptop() {
+            background: black;
+        }
+
         .reservation-info-btn {
-                display: flex;
-                text-decoration: none;
-                height: 3rem;
-                background: white;
-                color: black;
-                margin-top: 0.5rem;
-                align-items: center;
-                justify-content: center;
+            display: flex;
+            text-decoration: none;
+            height: 3rem;
+            background: white;
+            color: black;
+            margin-top: 0.5rem;
+            align-items: center;
+            justify-content: center;
 
             &:hover {
                 cursor: pointer;
@@ -54,7 +58,42 @@
         }
 
         .reservation-slots-wrap {
+            margin: 0 auto;
             margin-top: 3rem;
+            display: flex;
+            width: 360px;
+            padding: 1.5rem;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+
+            @include mobile() {
+                width: 100%;
+            }
+
+            .color-black {
+                color: black;
+            }
+
+            .reservation-icon {
+                width: 50px;
+            }
+
+            .time-slot-reservation {
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .document-text {
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         .tattoo-title {
@@ -74,6 +113,10 @@
             font-size: 5rem;
             margin-top: 9rem;
             text-shadow: 0px 0px 10px $dark-black;
+
+            @include mobile() {
+                font-size: 4rem;
+            }
         }
 
         .tattoo-text {
@@ -116,13 +159,18 @@
                     text-align: center;
                     margin-top: 1rem;
 
-                    @include laptop {
+                    @include laptop() {
                         flex: 0 1 calc(50% - 1rem);
+                    }
+
+                    @include mobile() {
+                        flex: 0 1 100%;
                     }
 
                     .process-single-icon {
                         width: 100px;
-                        filter: drop-shadow(0px 0px 3px $dark-black) saturate(0.9);
+                        filter: drop-shadow(0px 0px 3px $dark-black)
+                            saturate(0.9);
                     }
                 }
             }
