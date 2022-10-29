@@ -1,5 +1,5 @@
 <section class="faq-content-wrap">
-    <h1 class="faq-title">Tattoo</h1>
+    <!-- <h1 class="faq-title">Tattoo</h1> -->
     <div class="faq-content">
         <div class="b-faq">
             <div class="faq__item">
@@ -35,10 +35,7 @@
                     <span class="faq__text">Wie viel kostet ein neues Tattoo?</span>
                 </a>
                 <div class="faq__content js-faq-content">
-                    <p class="faq-text">Dies lässt sich nicht einfach pauschalisieren, sondern kommt ganz auf das Motiv darauf an. Wir können wir aber gerne in
-                    einem persönlichen Beratungsgespräch einen verbindlichen Preis machen oder per Email einen Richtpreis durchgeben. Sende
-                    uns dazu einfach ein Foto mit dem Vermerk ob es farbig oder schwarz/weiss gestochen werden soll und die gewünschte
-                    Stelle/Grösse an info@dado.ch.</p>
+                    <p class="faq-text">Dies lässt sich nicht einfach pauschalisieren, sondern kommt ganz auf das Motiv darauf an. Gerne können wir in einem persönlichen Beratungsgespräch einen verbindlichen Preis machen oder per Email einen Richtpreis durchgeben. Sende uns dazu einfach ein Foto mit dem Vermerk ob es farbig oder schwarz/weiss gestochen werden soll und die gewünschte Stelle/Grösse an info@dado.ch.</p>
                 </div>
             </div>
         </div>
@@ -61,7 +58,7 @@
                     <span class="faq__text">Welche Zahlungsarten werden akzeptiert?</span>
                 </a>
                 <div class="faq__content js-faq-content">
-                    <p class="faq-text">Wenn du deinen Termin online buchst, kannst du mit Kreditkarte oder Paypal bezahlen. Im Studio akzeptieren wir Kartenzahlungen (Maestro, EC und Kreditkarte) sowie Google Pay und Apple Pay. Natürlich nehmen wir aber auch Barzahlungen entgegen.</p>
+                    <p class="faq-text">Im Studio akzeptieren wir neben TWINT- Zahlungen natürlich auch Barzahlungen</p>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
   font-family: "dado-font";
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/DarkSeed.ttf");
+  src: url("/fonts/CaviarDreams.ttf");
 }
 .header {
   height: 100vh;
@@ -111,7 +111,7 @@
   width: 1.5rem;
   border: none;
   height: 2px;
-  background: #3e7f80;
+  background: #B45F04;
 }
 .header .cta .cta-btn {
   padding: 0.5rem 1.5rem;
@@ -119,7 +119,7 @@
   color: white;
   text-decoration: none;
   background: transparent;
-  border: 0.2rem solid #3e7f80;
+  border: 0.2rem solid #B45F04;
 }
 .header .scroll {
   display: flex;
@@ -231,7 +231,7 @@
   padding-top: 10rem;
 }
 .showcase-wrap .showcase .showcase-overtitle {
-  color: #3e7f80;
+  color: #B45F04;
   font-size: 1.2rem;
   line-height: 4rem;
 }
@@ -374,7 +374,7 @@
   margin: 0 auto;
 }
 .artists-wrap .artists-content .artists-overtitle {
-  color: #3e7f80;
+  color: #B45F04;
   font-size: 1.2rem;
   display: block;
   padding-top: 5rem;
@@ -439,7 +439,7 @@
   text-align: center;
   font-family: "dado-font";
   text-shadow: 0px 0px 5px black;
-  color: #3e7f80;
+  color: #B45F04;
 }
 .artists-wrap .artists-background .artists-list .main-carousel .flickity-page-dots {
   bottom: -22px;
@@ -1011,7 +1011,7 @@
   margin: 0 auto;
 }
 .tattoo-content-wrap .tattoo-content .tattoo-overtitle {
-  color: #3e7f80;
+  color: #B45F04;
   font-size: 1.2rem;
   display: block;
   padding-top: 3rem;
@@ -1081,7 +1081,7 @@
   margin-top: 3rem;
 }
 .tattoo-content-wrap .tattoo-content .process-wrap .process-overtitle {
-  color: #3e7f80;
+  color: #B45F04;
   font-size: 1rem;
   display: block;
   padding-top: 3rem;
@@ -1280,7 +1280,7 @@
   width: 50px;
 }
 .piercing-content-wrap .piercing-content .piercing-overtitle {
-  color: #3e7f80;
+  color: #B45F04;
   font-size: 1.2rem;
   display: block;
   padding-top: 3rem;
@@ -1316,7 +1316,7 @@
   margin-top: 3rem;
 }
 .piercing-content-wrap .piercing-content .process-wrap .process-overtitle {
-  color: #3e7f80;
+  color: #B45F04;
   font-size: 1rem;
   display: block;
   padding-top: 3rem;
@@ -1411,7 +1411,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Mukta", sans-serif;
+  font-family: "dado-font";
   color: #efefef;
 }
 
@@ -1440,6 +1440,11 @@ html {
   .calendar-wide {
     margin: 0 auto;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 #modal {
@@ -1526,7 +1531,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3e7f80;
+  background: #B45F04;
   border-radius: 10px;
 }
 

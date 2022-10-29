@@ -9,8 +9,7 @@
             <a href="{{ URL::route('tattoo') }}" class="cta-left-btn">Book appointment</a>
         </div>
         <div class="cta-right">
-            <i class="far fa-play-circle play-btn"></i>
-            <div class="cta-right-container"></div>
+           <iframe src= "https://cdn3.3dswissmedia.com/360/artistdado" width="100%" style="border: none;" height="100%"></iframe>
         </div>
     </div>
 </section>

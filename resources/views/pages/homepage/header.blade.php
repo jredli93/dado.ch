@@ -10,7 +10,7 @@
         </div>
         <a href="#showcase" class="cta-btn">Showcase</button>
     </div>
-    <a href="#" class="scroll">
+    <a href="#showcase" class="scroll">
         <div class="box">
             <span></span>
             <span></span>

@@ -4,7 +4,7 @@
     font-family: "dado-font";
     font-style: normal;
     font-weight: 600;
-    src: url("/fonts/DarkSeed.ttf");
+    src: url("/fonts/CaviarDreams.ttf");
 }
 
 @import "./helpers/variables.scss";
@@ -36,7 +36,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: $regular-text;
+    font-family: $dado-font;
     color: $text-white;
 }
 
@@ -64,6 +64,11 @@ html {
     @include laptop() {
         margin: 0 auto;
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;  
+    margin-top: 1rem;  
 }
 
 #modal {
