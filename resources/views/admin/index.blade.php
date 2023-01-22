@@ -55,6 +55,7 @@
                         <tr>
                             <th>Date</th>
                             <th>Time</th>
+                            <th>Service</th>
                             <th>Action</th>
                         </tr>
                         </thead>
@@ -63,6 +64,7 @@
                             <tr>
                                 <td>{{$reservation->date}}</td>
                                 <td>{{$reservation->time}}</td>
+                                <td>{{$reservation->service_type_id == 1 ? 'laser' : 'tattoo'}}</td>
                                 <td>
                                     <div class="modal fade" id="modal-default-{{ $reservation->id }}">
                                         <div class="modal-dialog">

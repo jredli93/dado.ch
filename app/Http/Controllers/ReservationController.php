@@ -105,7 +105,7 @@ class ReservationController extends Controller
     public function createReservation(CreateReservationRequest $request)
     {
         //Check if reservation exists
-        if (Reservation::where('date', $request->date)->where('time', $request->time)->first()){
+        if (Reservation::where('date', $request->date)->where('service_type_id', $request->service_type_id)->where('time', $request->time)->first()){
             throw new \Exception('Reservation is taken!');
         }
         //Create reservation

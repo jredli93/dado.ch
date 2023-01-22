@@ -1,10 +1,10 @@
 <?php
 
 namespace Database\Factories;
- 
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
- 
+
 class ServiceGroupFactory extends Factory
 {
     /**
@@ -15,7 +15,7 @@ class ServiceGroupFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->randomElement(['tattoo', 'laser']),
+            'name' => $this->faker->randomElement(['laser', 'tattoo']),
         ];
     }
 }

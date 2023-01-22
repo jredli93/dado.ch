@@ -28,7 +28,6 @@ class ReservationMail extends Mailable
      */
     public function build()
     {
-        return $this->from('dado@email.com')
-            ->markdown('email.reservation',['data'=>$this->data]);
+        return $this->from('dado@email.com')->markdown('email.reservation',['data'=>$this->data]);
     }
 }
