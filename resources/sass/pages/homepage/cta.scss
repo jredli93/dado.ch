@@ -23,6 +23,7 @@
 
             @include laptop {
                 padding: 4rem;
+                width: 100%;
             }
 
 
@@ -51,6 +52,10 @@
                 font-size: 4rem;
                 font-family: $dado-font;
                 padding: 1rem 0;
+
+                @include tablet() {
+                    font-size: 3rem;
+                }
             }
         }
 

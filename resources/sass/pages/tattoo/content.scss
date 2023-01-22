@@ -25,9 +25,13 @@
             margin-top: 0.5rem;
             align-items: center;
             justify-content: center;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 cursor: pointer;
+                background: $dark-black;
+                color: $text-white;
+                outline: 1px solid white;
             }
         }
 
@@ -36,11 +40,17 @@
             border: 1px solid white;
             margin-top: 0.4rem;
             text-align: center;
+            transition: all 0.3s ease-in-out;
 
             &:hover {
                 background: $text-white;
                 color: $dark-black;
                 cursor: pointer;
+            }
+
+            &:focus {
+                background: $text-white;
+                color: $dark-black;
             }
         }
     }
@@ -103,6 +113,10 @@
             text-align: center;
             font-size: 5rem;
             text-shadow: 0px 0px 10px $dark-black;
+
+            @include tablet() {
+                font-size: 3rem;
+            }
         }
 
         .tattoo-title-advice {
@@ -115,7 +129,7 @@
             text-shadow: 0px 0px 10px $dark-black;
 
             @include mobile() {
-                font-size: 4rem;
+                font-size: 3rem;
             }
         }
 
@@ -142,6 +156,10 @@
                 text-align: center;
                 font-size: 4rem;
                 text-shadow: 0px 0px 10px $dark-black;
+
+                @include tablet() {
+                    font-size: 3rem;
+                }
             }
 
             .process-container {

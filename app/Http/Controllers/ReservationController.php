@@ -8,6 +8,8 @@ use App\Http\Requests\Reservation\CreateReservationRequest;
 use App\Http\Requests\Reservation\GetFreeReservationRequest;
 use App\Period;
 use App\Reservation;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ReservationMail;
 
 class ReservationController extends Controller
 {
@@ -110,10 +112,9 @@ class ReservationController extends Controller
         }
         //Create reservation
         $reservation = Reservation::create($request->all());
-        //Fire event for sending mail
-        event(new NewReservationEvent($reservation));
 
-        return $reservation;
+        Mail::to('example@email')->send(new ReservationMail($request->all()));
+
+        return back()->with('success', 'Please check your email with reservation details.');
     }
-
 }

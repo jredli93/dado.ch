@@ -27,7 +27,7 @@ $(document).on('click',".fc-day",function(){
         success: function (response) {
             reservationSlots.innerHtml = '';
             $.each(response, function (index) {
-                reservationSlot += `<div class="reservation-slot" data-slot=${response[index]}>${response[index]}</div>`;
+                reservationSlot += `<div class="reservation-slot" tabindex="${index}" data-slot=${response[index]}>${response[index]}</div>`;
             })
             reservationSlots.html(reservationSlot);
         },
