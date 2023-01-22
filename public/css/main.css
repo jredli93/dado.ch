@@ -397,7 +397,7 @@
   margin-top: 5rem;
 }
 .artists-wrap .artists-background .artists-list .main-carousel {
-  height: 480px;
+  height: 520px;
   /* position dots up a bit */
   /* dots are lines */
 }
@@ -423,14 +423,30 @@
 .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai1 {
   background: url("/assets/images/Dado.jpg") top/cover;
 }
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai1:hover {
+  background: url("/assets/images/Dado 2.jpg") top/cover;
+  transition: all 0.5s ease-in-out;
+}
 .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai2 {
   background: url("/assets/images/David.jpg") top/cover;
+}
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai2:hover {
+  background: url("/assets/images/David 2.jpg") top/cover;
+  transition: all 0.5s ease-in-out;
 }
 .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai3 {
   background: url("/assets/images/Leo.jpg") top/cover;
 }
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai3:hover {
+  background: url("/assets/images/Leo 2.jpg") top/cover;
+  transition: all 0.5s ease-in-out;
+}
 .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai4 {
   background: url("/assets/images/Petar.jpg") top/cover;
+  transition: all 0.5s ease-in-out;
+}
+.artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .ai4:hover {
+  background: url("/assets/images/Petar 2.jpg") top/cover;
 }
 .artists-wrap .artists-background .artists-list .main-carousel .carousel-cell .artist-info {
   display: none;

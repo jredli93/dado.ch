@@ -27,8 +27,8 @@ Route::get('/', 'PageController@index')->name('home');
 Route::get('/faq', 'PageController@faq')->name('faq');
 Route::get('/tattoo', 'PageController@tattoo')->name('tattoo');
 Route::get('/laser', 'PageController@laser')->name('laser');
+Route::post('/contact-send', [PageController::class, 'ContactForm'])->name('contact.send');
 Route::get('/form', 'PageController@form')->name('form');
-
 Route::get('/admin', 'AdminController@index')->name('admin.index');
 Route::post('/admin/block', 'AdminController@block')->name('admin.block');
 Route::delete('/unblock/{id}', 'AdminController@unblock')->name('unblock');

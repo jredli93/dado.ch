@@ -22,7 +22,7 @@
             @else
                 NO SERVICES
             @endif
-        </div>      
+        </div>
 
         <div class="process-wrap">
             <span class="process-overtitle">How it</span>

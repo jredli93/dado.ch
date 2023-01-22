@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dado Artist Collective is a studio.">
     <meta name="keywords" content="Dado, Tatoo, Laser, Studio,">
-    
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -20,18 +20,18 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font/flaticon.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/font-vintage/flaticon.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/font-vintage/flaticon.css') }}" rel="stylesheet"> -->
 
     <link rel="icon" type="image/x-icon" href="{{ asset('/assets/images/logo.svg') }}">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
     <link href="{{ asset('css/vegas.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />    
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    
+
 </head>
 <body>
-    
+
     @yield('header')
     @yield('showcase')
     @yield('cta')
@@ -51,7 +51,7 @@
             </ul>
         </nav>
     </div>
-    
+
     <!-- Scripts -->
     {{-- <script src="http://code.jquery.com/jquery.min.js"></script> --}}
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

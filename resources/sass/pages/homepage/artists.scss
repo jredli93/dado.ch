@@ -39,7 +39,7 @@
             margin-top: 5rem;
 
             .main-carousel {
-                height: 480px;
+                height: 520px;
 
                 .flicity-viewport {
                     height: 100%;
@@ -63,18 +63,38 @@
 
                     .ai1 {
                         background: url("/assets/images/Dado.jpg") top/cover;
+
+                        &:hover {
+                            background: url("/assets/images/Dado 2.jpg") top/cover;
+                            transition: all 0.5s ease-in-out;
+                        }
                     }
 
                     .ai2 {
                         background: url("/assets/images/David.jpg") top/cover;
+
+                        &:hover {
+                            background: url("/assets/images/David 2.jpg") top/cover;
+                            transition: all 0.5s ease-in-out;
+                        }
                     }
 
                     .ai3 {
                         background: url("/assets/images/Leo.jpg") top/cover;
+
+                        &:hover {
+                            background: url("/assets/images/Leo 2.jpg") top/cover;
+                            transition: all 0.5s ease-in-out;
+                        }
                     }
 
                     .ai4 {
                         background: url("/assets/images/Petar.jpg") top/cover;
+                        transition: all 0.5s ease-in-out;
+
+                        &:hover {
+                            background: url("/assets/images/Petar 2.jpg") top/cover;
+                        }
                     }
 
                     .artist-info {

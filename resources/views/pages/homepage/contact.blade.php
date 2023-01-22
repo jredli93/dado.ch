@@ -12,10 +12,12 @@
             </div>
         </div>
         <div class="contact-form">
-           <form action="#" method="POST" class="form" name="contactForm">
+            <form method="POST" action="{{ route('contact.send') }}" class="form">
+                        @csrf
                <input type="text" class="input" name="contact-name" placeholder="Name" required>
                <input type="email" class="input" name="contact-email" placeholder="Email" name="Email" required>
-               <textarea class="textarea" name="contact-ta" cols="30" rows="5" name="Messsage" placeholder="Message" required></textarea>
+               <textarea class="textarea" name="contact-ta" cols="30" rows="5" placeholder="Message" required></textarea>
+               <button type="submit">Send</button>
            </form>
         </div>
     </div>

@@ -4,7 +4,21 @@ $(document).on('click',".fc-day",function(){
     var service_type_id = $('#id').val();
     let reservationSlots = $(".reservation-slots");
     let reservationSlot = ''
+    let isAdmin = false;
     localStorage.setItem('date', date);
+
+    console.log('window', window);
+
+    $.ajax({
+        type: "GET",
+        url: '/api/user',
+        success: function (response) {
+            console.info('user role', response)
+        },
+        error: function (error) {
+            console.log(error)
+        }
+    })
 
     $.ajax({
         type: "POST",
@@ -13,7 +27,7 @@ $(document).on('click',".fc-day",function(){
         success: function (response) {
             reservationSlots.innerHtml = '';
             $.each(response, function (index) {
-                reservationSlot += `<div class="reservation-slot" data-slot=${response[index]}><span class="">x</span>${response[index]}</div>`;
+                reservationSlot += `<div class="reservation-slot" data-slot=${response[index]}>${response[index]}</div>`;
             })
             reservationSlots.html(reservationSlot);
         },

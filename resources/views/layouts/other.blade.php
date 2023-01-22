@@ -19,7 +19,6 @@
     <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font/flaticon.css') }}" rel="stylesheet">
     <link href="{{ asset('css/icons.svg') }}" rel="stylesheet">
-    {{-- <link href="{{ asset('css/font-vintage1/flaticon.css') }}" rel="stylesheet"> --}}
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
@@ -57,6 +56,6 @@
     <script src="{{ asset('js/mobile-menu.js') }}" defer></script>
     <script src="{{ asset('js/accordion.js') }}" defer></script>
     <script src="{{ asset('js/reservations.js') }}" defer></script>
-    
+
 </body>
 </html>

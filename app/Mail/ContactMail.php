@@ -7,10 +7,16 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ReservationMail extends Mailable
+class ContactMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public $data;
     /**
      * Create a new message instance.
      *
@@ -28,7 +34,6 @@ class ReservationMail extends Mailable
      */
     public function build()
     {
-        return $this->from('dado@email.com')
-            ->markdown('email.reservation',['data'=>$this->data]);
+        return $this->from('email@dadoch.com')->subject('New Contact Message')->view('email.contact')->with('data', $this->data);
     }
 }
