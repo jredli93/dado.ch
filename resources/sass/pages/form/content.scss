@@ -7,10 +7,10 @@
         z-index: 999;
         top: -45px;
         left: 10px;
-        height: 76vh;
-        padding: 2rem 4rem 0rem;
+        height: auto;
+        padding: 2rem 4rem 2rem;
         box-shadow: 0px 0px 5px $dark-black;
-        background: url('/assets/images/slider1.jpg');
+        background: url("/assets/images/slider1.jpg");
         background-size: cover;
 
         @include mobile {
@@ -55,7 +55,6 @@
         }
 
         .contact-form {
-
             .form-submit {
                 display: flex;
                 text-decoration: none;
@@ -80,5 +79,13 @@
                 }
             }
         }
+    }
+
+    @include laptop() {
+        width: 70vw;
+    }
+
+    @include tablet() {
+        width: 90vw;
     }
 }
